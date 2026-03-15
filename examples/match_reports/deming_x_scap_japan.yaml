@@ -1,0 +1,118 @@
+# Activity Specification Protocol — Match Report
+# Match: W. Edwards Deming x SCAP Economic and Scientific Section
+# Date: April 1947
+
+meta:
+  schema_version: "1.0"
+  report_type: "match_report"
+  date: "1947-04-15"
+  spec_a:
+    file: "examples/i_want/deming_1947.yaml"
+    name: "William Edwards Deming"
+    one_line: "Apply statistical methods to production systems as a management philosophy, proving that quality is a system property designed by management, not an inspection outcome checked by workers."
+  spec_b:
+    file: "examples/i_need/scap_japan_1947.yaml"
+    name: "SCAP Economic and Scientific Section"
+    one_line: "Statistical expertise for census modernization and industrial quality reconstruction across occupied Japan."
+
+complementarity:
+  score: "high"
+  a_needs_b_has:
+    - a_need: "An entire industrial system willing to commit to quality transformation at the management level"
+      b_offers: "Government authority across an entire national industrial system, with power to convene executives and mandate participation"
+      match_quality: "direct"
+    - a_need: "Organizations where top management commits to learning statistical methods personally"
+      b_offers: "Access to Japanese executive and engineering leadership through JUSE and Keidanren — audiences of hundreds of decision-makers"
+      match_quality: "direct"
+    - a_need: "Leaders who accept that quality problems are management's responsibility"
+      b_offers: "An audience in crisis — Japanese industry has no postwar complacency, no illusion that the status quo is acceptable"
+      match_quality: "direct"
+  b_needs_a_has:
+    - b_need: "Census sampling expert with national statistical office experience"
+      a_offers: "Over a decade at the U.S. Census Bureau designing sampling methods for large-scale population surveys"
+      match_quality: "direct"
+    - b_need: "Statistical process control methodology for manufacturing"
+      a_offers: "Shewhart's SPC methods, taught to thousands of American manufacturers during WWII, ready for deployment"
+      match_quality: "direct"
+    - b_need: "Teacher who can communicate statistical concepts to non-statisticians and transfer knowledge permanently"
+      a_offers: "Years of experience teaching quality methods through the War Production Board's Training Within Industry program"
+      match_quality: "direct"
+    - b_need: "Systems thinker who sees quality as a property of entire production systems"
+      a_offers: "Core conviction that 85% of quality problems are caused by the system, not by workers — exactly the system-level framing SCAP needs"
+      match_quality: "direct"
+  gaps:
+    - side: "b"
+      unmet_need: "Long-term on-site presence — Deming's 1947 visit is for census work, limited duration"
+      severity: "manageable"
+    - side: "a"
+      unmet_need: "Deming does not yet know that Japan wants quality methodology, not just census help"
+      severity: "manageable"
+
+method_compatibility:
+  score: "compatible"
+  strengths:
+    - "SCAP provides large audiences; Deming's method is lecture-based teaching to groups"
+    - "SCAP requires train-the-trainer for sustainability; Deming's methods are designed to be taught and owned locally"
+    - "SCAP needs autonomous consultants; Deming works independently with minimal administrative overhead"
+    - "Japanese consensus-based decision-making aligns with Deming's insistence on management-level commitment"
+  friction_points:
+    - "Deming is invited for census work — the quality connection must be discovered organically through personal relationships in Tokyo"
+    - "Language barrier requires Japanese statisticians as intermediaries and translators"
+    - "SCAP's political constraint (no American imperialism) requires Deming to teach, not direct — which is exactly what he prefers, but must be navigated carefully"
+
+intellectual_alignment:
+  score: "complementary"
+  shared_priors:
+    - "Statistical methods as tools for understanding system behavior, not just measuring outcomes"
+  unique_to_a:
+    - "Shewhart — control charts, common vs special cause variation"
+    - "Fisher — experimental design and statistical inference as scientific method"
+    - "C.I. Lewis — operational definitions as the foundation for meaningful measurement"
+  unique_to_b:
+    - "Japanese craftsmanship culture (monozukuri) — deep pride in the quality of made things"
+    - "Group-oriented continuous improvement (later formalized as kaizen)"
+    - "Long-term institutional thinking — willingness to invest decades in a methodology"
+  note: >
+    The intellectual complementarity is profound. Deming brings the Western
+    statistical tradition — Shewhart, Fisher, operational definitions — which
+    provides the rigorous analytical framework. Japan brings a cultural
+    disposition toward craftsmanship, group improvement, and long-term
+    thinking that is perfectly suited to receiving these methods. American
+    industry had the methods but not the cultural patience. Japanese industry
+    has the cultural patience but not the methods. The match fills both gaps
+    simultaneously.
+
+positioning:
+  score: "complementary"
+  synergy_areas:
+    - "Census expertise provides the legitimate entry point; quality methodology is the transformative payload"
+    - "SCAP's national authority means methods spread horizontally across industries, not vertically within one company"
+    - "Japanese crisis conditions ensure methods are applied immediately, not shelved — the opposite of postwar America"
+    - "Deming's frustration with American complacency meets Japan's hunger for exactly what he has been trying to give away"
+  tension_areas:
+    - "The quality dimension is latent in 1947 — it must be activated through personal encounter, not institutional planning"
+
+recommendation:
+  fit: "strong"
+  collaboration_type: "autonomous_research"
+  concrete_first_step: >
+    Deming conducts the census sampling consultation — his official SCAP
+    assignment. While in Tokyo, he meets Japanese statisticians and JUSE
+    leadership through professional channels. They learn he taught quality
+    methods during the war. JUSE invites him to return and lecture on
+    statistical quality control to Japanese management. He accepts.
+  risks:
+    - "If the 1947 census visit does not produce personal connections to JUSE, the quality match never activates"
+    - "If SCAP bureaucracy limits Deming's interactions to census officials only, the cross-pollination opportunity is lost"
+    - "If Japanese management treats statistical methods as shop-floor tools (the American mistake), the transformation stalls"
+  hindsight_verdict: >
+    The most productive match between a methodology and a civilization in
+    the 20th century. Deming's 1947 census visit led directly to the 1950
+    JUSE quality lectures. Japan adopted Deming's methods at the management
+    level — exactly what American industry refused to do. The Deming Prize
+    (1951) institutionalized the commitment. Within three decades, Japanese
+    automobiles, electronics, cameras, and steel surpassed American quality.
+    The 1973 oil crisis and the 1980 NBC documentary "If Japan Can... Why
+    Can't We?" finally forced American industry to ask why Japanese products
+    were better. The answer was a 46-year-old statistician from Washington
+    D.C. who could not get anyone at home to listen.

@@ -1,0 +1,77 @@
+# Activity Specification Protocol — "I Want" Schema
+# Version: 1.0
+# Type: Person specification (activity-oriented professional profile)
+# License: MIT
+#
+# This schema defines the structure for an individual's activity specification.
+# It answers "WHAT does the work produce?" not "WHO are you?"
+# All fields under activity: must be verb-first. Credentials come last.
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_want"             # person seeking engagement
+  spec_date: "YYYY-MM-DD"         # date this specification is accurate as of
+  format: "activity-specification-protocol"
+  context:                         # situational framing (optional but recommended)
+    situation: ""                  # what is happening at this moment
+    what_comes_next: ""            # what the person is moving toward
+    hindsight_note: ""             # for historical demos only — what we know now
+
+identity:
+  name: ""
+  location: ""
+  languages: []
+
+# WHAT THE WORK PRODUCES (verb-first, no titles)
+activity:
+  one_line: ""                     # < 140 chars, starts with a verb
+  description: ""                  # 2-3 sentences expanding the one_line
+  method: ""                       # how the work is done — tools, approaches, style
+
+# HOW THIS DIFFERS FROM OTHERS IN THE FIELD
+positioning:
+  core_distinction: ""             # one sentence
+  comparison:                      # what others do vs what this work does
+    - others: ""
+      this_work: ""
+
+# WHAT HAS BEEN BUILT, PUBLISHED, OR FORMALIZED
+frameworks_or_outputs:
+  - name: ""
+    domain: ""
+    description: ""
+    status: ""                     # published | in_progress | conceptual
+    url: ""                        # optional
+
+# FROZEN INTELLECTUAL INPUTS
+intellectual_priors:
+  - author: ""
+    work: ""
+    contribution: ""               # how this prior shaped the work
+
+# THE EARLIEST RECURRING PATTERN
+origin:
+  pattern: ""                      # name the structural pattern
+  description: ""                  # the story
+  core_lesson: ""                  # one sentence
+
+# SUPPORTING CONTEXT (always last, never the lead)
+credentials:
+  education:
+    - degree: ""
+      institution: ""
+      year: 0
+  experience_arc: ""               # trajectory narrative, not a job list
+
+# INTERFACE SPECIFICATION
+collaboration:
+  what_I_respond_to: []            # types of engagement that excite
+  what_I_do_not_respond_to: []     # types of engagement to skip
+  preferred_format: []             # written, structured, verbal, etc.
+  channels: {}                     # email, url, etc.
+
+# WHAT IS IN PROGRESS AND WHAT IS NEEDED
+active_work:
+  - topic: ""
+    status: ""                     # seeking | in_progress | blocked
+    need: ""                       # what is missing — the matchable field

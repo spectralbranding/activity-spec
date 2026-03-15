@@ -1,0 +1,62 @@
+# Activity Specification Protocol — "I Need" Schema
+# Version: 1.0
+# Type: Opportunity specification (project/organization seeking capability)
+# License: MIT
+#
+# This schema defines the structure for a project or organization's needs.
+# It answers "WHAT capability is missing?" not "WHAT job title do we need?"
+# Structurally parallel to i_want.yaml but from the demand side.
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_need"             # organization/project seeking capability
+  spec_date: "YYYY-MM-DD"         # date this specification is accurate as of
+  format: "activity-specification-protocol"
+  context:                         # situational framing
+    situation: ""                  # what is happening at this moment
+    what_exists: ""                # what has already been tried or built
+    hindsight_note: ""             # for historical demos only
+
+organization:
+  name: ""
+  location: ""
+  domain: ""                       # field of activity
+
+# WHAT THE PROJECT NEEDS (capability-first, not title-first)
+opportunity:
+  one_line: ""                     # < 140 chars, describes the gap
+  description: ""                  # 2-3 sentences expanding the need
+  urgency: ""                      # immediate | near_term | exploratory
+
+# WHAT CAPABILITIES ARE REQUIRED
+requirements:
+  capabilities_needed:
+    - capability: ""
+      priority: ""                 # critical | important | nice_to_have
+      description: ""
+
+  intellectual_fit:                # what kind of thinker is needed
+    - domain: ""
+      description: ""
+
+  method_requirements:
+    preferred_approach: []         # experimental, theoretical, applied, etc.
+    autonomy_level: ""             # directed | collaborative | autonomous
+    time_commitment: ""            # full_time | part_time | project_based
+
+# WHAT CANNOT BE CHANGED
+constraints:
+  - type: ""                       # budget | timeline | political | technical
+    description: ""
+
+# WHAT THE ORGANIZATION BRINGS TO THE TABLE
+what_we_offer:
+  - resource: ""
+    description: ""
+
+# SPECIFIC PROBLEMS WAITING TO BE SOLVED
+active_problems:
+  - problem: ""
+    status: ""                     # unsolved | partially_solved | theoretical
+    what_exists: ""                # prior attempts, available data, infrastructure
+    what_is_missing: ""            # the matchable field — pairs with i_want.active_work.need

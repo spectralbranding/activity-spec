@@ -1,0 +1,125 @@
+# Activity Specification Protocol — Match Report
+# Pairing: Taiichi Ohno x Toyota Motor Company
+# Date: October 1948
+
+meta:
+  schema_version: "1.0"
+  report_type: "match_report"
+  date: "1948-10-15"
+  spec_a:
+    file: "i_want/ohno_1948.yaml"
+    name: "Taiichi Ohno"
+    one_line: "Eliminate waste from manufacturing by making only what is needed, when it is needed, in the amount needed — redesigning production from push to pull."
+  spec_b:
+    file: "i_need/toyota_production_1948.yaml"
+    name: "Toyota Motor Company"
+    one_line: "Achieve high production efficiency without high volume — a different kind of productivity for a market that demands variety in small quantities."
+
+complementarity:
+  score: "high"
+  a_needs_b_has:
+    - a_need: "Management support to stop batch production despite short-term efficiency losses"
+      b_offers: "Crisis-driven management tolerance — orthodoxy has failed, the company is near bankruptcy, and radical experiments are preferable to extinction"
+      match_quality: "direct"
+    - a_need: "Permission to run one production line as a radical experiment"
+      b_offers: "Complete authority over the machine shop — operational autonomy to rearrange equipment, reassign workers, and change scheduling"
+      match_quality: "direct"
+    - a_need: "Workers willing to learn multiple machines"
+      b_offers: "A workforce with textile-industry background accustomed to Toyoda family culture — and the existential pressure that makes resistance to change less tenable"
+      match_quality: "partial"
+  b_needs_a_has:
+    - b_need: "Production flow redesign from batch to continuous flow"
+      a_offers: "Already conceiving process layout (machines in part-sequence order) as replacement for functional layout (machines grouped by type) — and preparing to demonstrate it"
+      match_quality: "direct"
+    - b_need: "Shop floor leader who changes habits by demonstration"
+      a_offers: "Sixteen years of manufacturing experience, method is genchi genbutsu (go and see), works by rearranging the floor and showing results — not by writing proposals"
+      match_quality: "direct"
+    - b_need: "Systems thinking about waste"
+      a_offers: "Sees overproduction, inventory, waiting, and defects as interconnected symptoms of push-based scheduling — not as separate problems to optimize individually"
+      match_quality: "direct"
+    - b_need: "Cross-domain principle transfer"
+      a_offers: "Supermarket pull logic for production scheduling, textile loom jidoka for line-stop quality control — principles transferred from retail and textiles to automotive"
+      match_quality: "direct"
+  gaps:
+    - side: "a"
+      unmet_need: "Union acceptance of multi-machine operation — workers see it as a speedup, not as waste elimination"
+      severity: "manageable"
+    - side: "b"
+      unmet_need: "Rapid changeover methods for stamping presses — Ohno sees the problem but the solution (SMED) will take years to develop, formalized later by Shigeo Shingo"
+      severity: "manageable"
+    - side: "b"
+      unmet_need: "Immediate financial results — the system takes years to mature but the company needs relief now"
+      severity: "manageable"
+
+method_compatibility:
+  score: "compatible"
+  strengths:
+    - "Ohno's method is shop floor demonstration — Toyota gives him a shop floor with full authority"
+    - "Ohno works by small-scale experiment then expansion — Toyota's crisis tolerates experiments but cannot afford system-wide failures"
+    - "Ohno builds from direct observation — Toyota's machine shop is both his laboratory and his production facility"
+    - "The crisis compresses decision cycles — management cannot afford months of analysis before approving changes"
+  friction_points:
+    - "Union resistance to multi-machine operation will require careful negotiation — Ohno must demonstrate that workers are not working harder, just waiting less"
+    - "Conventional accounting metrics (machine utilization, unit cost) will show the new system as LESS efficient until the full-flow benefits become visible"
+
+intellectual_alignment:
+  score: "convergent"
+  shared_priors:
+    - "Toyoda Sakichi's jidoka principle — machines detect their own errors and stop. This is Toyota's founding intellectual heritage and Ohno's core quality principle."
+    - "Ford's flow principle — continuous movement of work through sequential operations. Both Ohno and Toyota's leadership admire Ford's flow concept."
+  unique_to_a:
+    - "Supermarket pull-replenishment principle — alien to Japanese manufacturing in 1948, but Ohno sees it as the missing scheduling logic"
+    - "Ford's flow as separable from Ford's batch-and-push — Ohno keeps the flow principle and discards the volume dependence"
+  unique_to_b:
+    - "Kiichiro Toyoda's just-in-time concept — the president had articulated the phrase before Ohno, though without a system to implement it"
+    - "Textile industry discipline — workers from Toyoda Spinning and Weaving carry operational habits that support quality-first production"
+  note: >
+    Ohno's intellectual position is precisely what Toyota's crisis demands. Ford
+    is the shared reference point, but Ohno and Toyota need Ford's opposite —
+    efficiency without volume. The jidoka principle from Toyoda Sakichi is the
+    bridge: it is simultaneously Toyota's heritage and Ohno's core method. The
+    supermarket insight is the genuinely new element — it has no precedent in
+    Toyota's institutional knowledge and is Ohno's unique contribution.
+
+positioning:
+  score: "complementary"
+  synergy_areas:
+    - "Ohno's pull-based scheduling solves Toyota's overproduction problem directly — produce only what the next process needs"
+    - "Ohno's jidoka extension (line-stop for defects) builds on Toyota's founding principle while solving the late-defect-discovery problem"
+    - "Ohno's process layout eliminates the inventory accumulation that ties up Toyota's scarce working capital"
+    - "The survival crisis removes the institutional inertia that would normally block Ohno's radical changes"
+  tension_areas:
+    - "Short-term efficiency metrics will worsen before they improve — management must resist reverting to batch production when conventional metrics decline"
+
+recommendation:
+  fit: "strong"
+  collaboration_type: "autonomous_research"
+  concrete_first_step: >
+    Ohno rearranges one section of the machine shop from functional layout (all
+    lathes together, all drills together) to process layout (machines arranged
+    in the sequence a single part requires). Workers learn to operate multiple
+    machines in the cell. Single-piece flow replaces batch transfer between
+    operations. Cycle time drops. Work-in-process inventory drops. Defects are
+    caught immediately because there is no buffer stock to hide them.
+    Management sees the result and authorizes expansion to the next section.
+  risks:
+    - "The 1949-1950 financial crisis and labor dispute may halt the experiments — Ohno's system needs continuity to mature"
+    - "If Kiichiro Toyoda resigns (which he will, in 1950), the next president must also support the experiments"
+    - "Workers and foremen who resist multi-machine operation could slow adoption — Ohno's interpersonal style is demanding and not universally popular"
+    - "Conventional cost accounting will misrepresent the system's performance — machine utilization drops even as total system efficiency rises"
+  hindsight_verdict: >
+    Ohno developed the Toyota Production System over 25 years (1948-1975). The
+    machine shop experiments survived the 1950 crisis. Eiji Toyoda (who
+    succeeded Kiichiro) supported Ohno's methods and promoted him to manage
+    increasingly larger portions of Toyota's operations. Kanban (the card-based
+    pull signal, inspired by supermarket replenishment) was formalized in the
+    1950s. Shigeo Shingo developed SMED (single-minute exchange of die) in the
+    1960s, solving the changeover-time problem. Jidoka, andon, single-piece
+    flow, standardized work, and continuous improvement (kaizen) became the
+    integrated system. By the 1970s, Toyota's quality and efficiency surpassed
+    American competitors. "The Machine That Changed the World" (Womack, Jones,
+    Roos, 1990) and Ohno's own "Toyota Production System" (1988) brought the
+    methods to global attention. Lean manufacturing, derived from TPS, is now
+    the dominant production paradigm worldwide. The match between Ohno's vision
+    and Toyota's crisis was the most operationally consequential pairing in
+    manufacturing history — a system born from constraint, not from abundance.

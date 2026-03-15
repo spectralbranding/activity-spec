@@ -1,0 +1,124 @@
+# Activity Specification Protocol — Match Report
+# Pairing: Herbert Simon x RAND Corporation / Carnegie Tech GSIA
+# Date: September 1952
+
+meta:
+  schema_version: "1.0"
+  report_type: "match_report"
+  date: "1952-09-15"
+  spec_a:
+    file: "i_want/simon_1952.yaml"
+    name: "Herbert Alexander Simon"
+    one_line: "Model how humans and organizations actually make decisions under cognitive constraints — replacing the economic fiction of perfect rationality with empirically grounded formal models."
+  spec_b:
+    file: "i_need/rand_carnegie_1952.yaml"
+    name: "RAND Corporation / Carnegie Tech GSIA"
+    one_line: "Build formal, computational models of how organizations actually make decisions — descriptive, not normative."
+
+complementarity:
+  score: "high"
+  a_needs_b_has:
+    - a_need: "Computing resources to simulate decision processes formally"
+      b_offers: "RAND has early mainframes (JOHNNIAC under construction); Carnegie has growing access through university computing facilities"
+      match_quality: "direct"
+    - a_need: "Colleagues who speak both psychology and mathematics"
+      b_offers: "RAND has Arrow, Bellman, and game theorists; Carnegie is recruiting across disciplines by design — no departmental silos"
+      match_quality: "direct"
+    - a_need: "Institutional environment without disciplinary silos"
+      b_offers: "Carnegie is built from scratch without entrenched departments; RAND has no departments at all — only problems"
+      match_quality: "direct"
+    - a_need: "Doctoral students for a long-term research program"
+      b_offers: "Carnegie's new doctoral program — Simon can shape it from the ground up"
+      match_quality: "direct"
+  b_needs_a_has:
+    - b_need: "Formal modeling of bounded decision-making"
+      a_offers: "Published 'Administrative Behavior' (1947) — the foundational text on bounded rationality and satisficing. Has been formalizing these ideas for a decade."
+      match_quality: "direct"
+    - b_need: "Cross-disciplinary fluency in economics, psychology, and formal logic"
+      a_offers: "PhD in political science but publishes in economics, psychology, and public administration. Reads von Neumann, Russell, and Barnard with equal facility."
+      match_quality: "direct"
+    - b_need: "Empirical grounding in organizational behavior"
+      a_offers: "Years of direct observation in municipal government (Milwaukee), fire department administration, and university budgeting processes."
+      match_quality: "direct"
+    - b_need: "Computational thinking about cognitive processes"
+      a_offers: "Already conceives of decision-making as sequential information processing — search, comparison, selection. The step to computational simulation is conceptual, not paradigmatic."
+      match_quality: "adjacent"
+  gaps:
+    - side: "a"
+      unmet_need: "A collaborator who can program computers — Simon thinks computationally but does not yet program"
+      severity: "manageable"
+    - side: "b"
+      unmet_need: "Immediate practical applications for military planning (RAND's mission constraint)"
+      severity: "manageable"
+
+method_compatibility:
+  score: "compatible"
+  strengths:
+    - "Carnegie offers autonomous research within a teaching institution — Simon wants to build a program, not just publish papers"
+    - "RAND offers computing access and military decision problems as empirical material — consulting arrangement preserves Carnegie base"
+    - "Both institutions value cross-disciplinary work as a feature, not a problem"
+    - "Carnegie's from-scratch curriculum means Simon's research directly becomes the teaching — no separation between discovery and dissemination"
+  friction_points:
+    - "RAND's classified work restricts publication of some findings — Simon values open publication"
+    - "Carnegie requires teaching load — but curriculum design IS the research, so this friction is productive"
+
+intellectual_alignment:
+  score: "complementary"
+  shared_priors:
+    - "Von Neumann and Morgenstern (1944) — both reference game theory as the normative benchmark that descriptive models must improve upon"
+    - "Operations research tradition from WWII — optimization under constraints, but with different assumptions about agent rationality"
+  unique_to_a:
+    - "Chester Barnard — organizations as cooperative systems with their own decision logic"
+    - "Whitehead and Russell — formal logic as a model for reasoning about reasoning"
+    - "Charles Babbage — mechanical decomposition of cognitive labor"
+  unique_to_b:
+    - "RAND's military planning experience — real decision-making under extreme uncertainty and time pressure"
+    - "Kenneth Arrow's impossibility theorem and social choice theory (Arrow is at RAND)"
+    - "Richard Bellman's dynamic programming (Bellman is at RAND) — optimal sequential decision-making"
+  note: >
+    Simon's bounded rationality is a direct critique of the rational actor model
+    that RAND's game theorists use. This creates productive tension — RAND
+    provides the normative framework that Simon is replacing. Carnegie provides
+    the institutional freedom to build the replacement. The combination of both
+    institutions — RAND for computational resources and intellectual challenge,
+    Carnegie for long-term program building — is more powerful than either alone.
+
+positioning:
+  score: "complementary"
+  synergy_areas:
+    - "Simon's descriptive models fill the gap that RAND's normative game theory cannot — how commanders actually decide, not how they should"
+    - "Carnegie's scientific management program needs exactly the behavioral theory Simon is building — his research becomes the curriculum"
+    - "Simon's satisficing concept gives both institutions a formal alternative to optimization that works with realistic cognitive assumptions"
+  tension_areas:
+    - "RAND's game theorists (particularly those committed to rational actor models) may resist the claim that their normative models are empirically inadequate — but this tension drives refinement on both sides"
+
+recommendation:
+  fit: "strong"
+  collaboration_type: "autonomous_research"
+  concrete_first_step: >
+    Simon accepts the Carnegie faculty position and establishes a consulting
+    relationship with RAND. At Carnegie, he designs a doctoral seminar on
+    organizational decision-making that combines economic theory, psychological
+    experiments, and formal models. At RAND, he presents his satisficing
+    framework to the game theory and systems analysis groups, generating
+    structured critique from Arrow, Bellman, and others.
+  risks:
+    - "Simon's research program spans decades — Carnegie must be patient with a slow publication rate on the central theory while intermediate papers accumulate"
+    - "The RAND consulting arrangement may distract from the Carnegie program — or it may be the source of the key collaboration (with Newell)"
+    - "Cross-disciplinary work resists standard evaluation — promotion committees trained in single disciplines may not recognize the contribution until it is widely cited"
+  hindsight_verdict: >
+    Simon stayed at Carnegie for his entire career (1949-2001). Through RAND
+    consulting (1952-1955), he met Allen Newell, a RAND researcher. Together
+    with programmer Cliff Shaw, they built the Logic Theorist in 1956 — the
+    first program to prove mathematical theorems, widely considered the birth of
+    artificial intelligence. Simon recruited Newell to Carnegie, where they
+    founded the AI program. At Carnegie, Simon co-authored "Organizations"
+    (1958) with James March and "A Behavioral Theory of the Firm" (1963, with
+    Cyert and March) — the foundations of behavioral economics and
+    organizational theory. He won the ACM Turing Award (1975) for contributions
+    to AI and the Nobel Memorial Prize in Economics (1978) for bounded
+    rationality. The dual match — Carnegie as institutional home, RAND as
+    intellectual catalyst — was among the most productive in the history of
+    both organizational science and artificial intelligence. One i_want, two
+    i_needs, and the combination exceeded what either institution alone could
+    have produced.

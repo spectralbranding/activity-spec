@@ -1,0 +1,115 @@
+# Activity Specification Protocol — I Need
+# Subject: RAND Corporation + Carnegie Tech GSIA (dual demand)
+# Date: September 1952
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_need"
+  spec_date: "1952-09-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Two institutions, both seeking the same rare capability in 1952. RAND
+      Corporation (est. 1948) in Santa Monica — an Air Force-funded think tank
+      doing operations research, game theory, and systems analysis with early
+      computers. Carnegie Tech GSIA (est. 1949) in Pittsburgh — Dean Lee Bach's
+      experiment to build a business school from scratch on scientific
+      foundations, rejecting the Harvard case-study method. Both need researchers
+      who can formalize human decision-making — RAND for military planning
+      models, Carnegie for scientific management education.
+    what_exists: >
+      Von Neumann and Morgenstern's game theory (1944) provides normative
+      decision models. Operations research from WWII provides optimization
+      techniques for well-defined problems. Industrial psychology studies worker
+      behavior but lacks formal models. No one has built descriptive,
+      computational models of how organizations actually make decisions under
+      real cognitive constraints.
+    hindsight_note: >
+      Simon will remain at Carnegie for his entire career (1949-2001), making it
+      the center of behavioral science, AI, and organizational theory. But he
+      will consult at RAND (1952-1955), where he meets Allen Newell — leading
+      to the Logic Theorist (1956), the first AI program. Both institutions
+      benefit. Carnegie becomes Carnegie Mellon. Simon wins the Nobel (1978)
+      and Turing Award (1975).
+
+organization:
+  name: "RAND Corporation / Carnegie Tech GSIA"
+  location: "Santa Monica, California / Pittsburgh, Pennsylvania"
+  domain: "Decision science, organizational behavior, computational modeling"
+
+opportunity:
+  one_line: "Build formal, computational models of how organizations actually make decisions — descriptive, not normative."
+  description: >
+    Both organizations need someone who can bridge the gap between normative
+    decision theory (how rational agents should decide) and observed
+    organizational behavior (how real decision-makers actually decide). RAND
+    needs realistic models of human judgment for military planning simulations.
+    Carnegie needs a scientific foundation for management education that
+    replaces case-study anecdotes with testable behavioral models. Both need
+    someone comfortable with mathematical formalism AND empirical psychology.
+  urgency: "near_term"
+
+requirements:
+  capabilities_needed:
+    - capability: "Formal modeling of bounded decision-making"
+      priority: "critical"
+      description: "Ability to build mathematical models of decision-making that incorporate cognitive limitations — limited information, limited computation, limited time — rather than assuming them away."
+    - capability: "Cross-disciplinary fluency"
+      priority: "critical"
+      description: "Must speak economics, psychology, and mathematical logic fluently. The person cannot be anchored in any single discipline — the problem lives at the intersection."
+    - capability: "Empirical grounding in organizational behavior"
+      priority: "important"
+      description: "Must have observed real organizations making real decisions. Theory must be built from observation, not from axioms alone."
+    - capability: "Computational thinking"
+      priority: "important"
+      description: "Ability to conceive of cognitive processes as information-processing procedures that could, in principle, be programmed on a digital computer."
+
+  intellectual_fit:
+    - domain: "Behavioral science meets formal methods"
+      description: "Must reject the neoclassical assumption of perfect rationality on empirical grounds, not on philosophical grounds. The replacement must be equally formal, not less formal."
+    - domain: "Organizational theory meets computation"
+      description: "Must see organizations as information-processing systems — structures that shape what individuals can perceive, communicate, and decide."
+
+  method_requirements:
+    preferred_approach:
+      - "empirical observation"
+      - "mathematical formalization"
+      - "computational simulation"
+    autonomy_level: "autonomous"
+    time_commitment: "full_time"
+
+constraints:
+  - type: "political"
+    description: "RAND requires security clearance for some classified military research. Not all work can be published openly."
+  - type: "political"
+    description: "Carnegie requires teaching — but the curriculum is being built from scratch, so teaching IS research design. Faculty shape the courses."
+  - type: "technical"
+    description: "Computing resources are scarce in 1952. RAND has early mainframes; Carnegie has limited access. Any computational modeling must work within these constraints."
+  - type: "budget"
+    description: "RAND has military funding (generous but mission-constrained). Carnegie has foundation grants and university budgets (less generous but more flexible)."
+
+what_we_offer:
+  - resource: "RAND: Computing resources and military problem access"
+    description: "Early mainframes (JOHNNIAC under construction). Military decision problems as research material. No teaching obligations. Consulting arrangements possible alongside a primary appointment elsewhere."
+  - resource: "RAND: Intellectual concentration"
+    description: "Mathematicians, physicists, economists, game theorists — all working on decision and strategy problems. Arrow, Bellman, Flood, Dresher already on staff or consulting."
+  - resource: "Carnegie: A school built from scratch"
+    description: "No entrenched departments, no disciplinary silos, no legacy curriculum. Faculty positions span economics, psychology, and mathematics by design. Dean Bach actively recruits boundary-crossers."
+  - resource: "Carnegie: Doctoral students"
+    description: "A new doctoral program seeking students interested in behavioral science, organizational theory, and formal methods. The researcher shapes the program — the program does not constrain the researcher."
+  - resource: "Carnegie: Long-term institutional commitment"
+    description: "A permanent faculty position with freedom to build a multi-decade research program. No contract renewals, no grant dependency for core salary."
+
+active_problems:
+  - problem: "Realistic models of human judgment for military planning"
+    status: "unsolved"
+    what_exists: "Game theory provides optimal strategies for idealized agents. Operations research optimizes well-specified problems. But military planners are not ideal agents and real problems are not well-specified."
+    what_is_missing: "Models of how actual commanders make decisions under time pressure, incomplete information, and cognitive load. Descriptive models that can improve planning simulations."
+  - problem: "Scientific foundation for management education"
+    status: "unsolved"
+    what_exists: "Harvard Business School's case-study method. Industrial psychology. Fragments of applied economics. No unified scientific framework for understanding managerial decision-making."
+    what_is_missing: "A behavioral theory of the firm — formal models of how organizations search for alternatives, form aspiration levels, allocate attention, and make decisions. Testable, teachable, rigorous."
+  - problem: "Bridging normative and descriptive decision theory"
+    status: "theoretical"
+    what_exists: "Von Neumann and Morgenstern's normative framework. Scattered empirical observations that people violate the axioms. No formal descriptive alternative."
+    what_is_missing: "A replacement framework that is as mathematically rigorous as expected utility theory but empirically accurate — modeling what decision-makers actually do, not what they should do."

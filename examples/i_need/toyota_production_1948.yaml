@@ -1,0 +1,115 @@
+# Activity Specification Protocol — I Need
+# Subject: Toyota Motor Company, Honsha Plant
+# Date: October 1948
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_need"
+  spec_date: "1948-10-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Toyota Motor Company is in crisis. Japan's postwar economy is shattered.
+      Raw materials are scarce and expensive. The domestic market demands variety
+      — trucks, cars, buses — in small volumes. American competitors produce
+      thousands of identical vehicles per day on dedicated assembly lines.
+      Toyota produces roughly 2,685 vehicles per year. Kiichiro Toyoda has
+      issued the challenge: catch up with American automotive productivity in
+      three years. But catching up cannot mean copying Ford — Ford's model
+      requires capital and volume that Toyota does not have and cannot sell.
+    what_exists: >
+      Ford's mass production system — high volume, dedicated machinery, large
+      batch sizes, end-of-line inspection. Works brilliantly for millions of
+      identical Model Ts, but requires enormous capital investment and a mass
+      market. Toyota has neither. Toyoda Sakichi's jidoka principle from the
+      textile operation — machines that detect their own errors. Standard
+      Japanese manufacturing practice is batch-and-push, copied from American
+      methods but without American volumes.
+    hindsight_note: >
+      Toyota will nearly go bankrupt in 1949-1950. Kiichiro Toyoda will resign
+      during the labor crisis of 1950. But the production experiments that begin
+      in 1948 will survive the crisis and evolve into the Toyota Production
+      System — the most imitated manufacturing system in history. By the 1980s,
+      Japanese automakers will outperform American competitors on cost, quality,
+      and variety simultaneously. "The Machine That Changed the World" (1990)
+      will name it Lean manufacturing.
+
+organization:
+  name: "Toyota Motor Company"
+  location: "Toyota City (Koromo), Aichi Prefecture, Japan"
+  domain: "Automotive manufacturing"
+
+opportunity:
+  one_line: "Achieve high production efficiency without high volume — a different kind of productivity for a market that demands variety in small quantities."
+  description: >
+    Toyota needs a production system that works under constraints that make
+    Ford's model impossible: low volume, high variety, scarce capital, expensive
+    materials, small factory footprint. The system must produce trucks, cars,
+    and buses on the same lines, change between models quickly, hold minimal
+    inventory, and catch defects before they propagate. Someone must redesign
+    manufacturing flow from first principles — not optimize the existing batch-
+    and-push system, but replace it.
+  urgency: "immediate"
+
+requirements:
+  capabilities_needed:
+    - capability: "Production flow redesign"
+      priority: "critical"
+      description: "Ability to rearrange manufacturing operations from batch processing (functional layout) to continuous flow (process layout) — reducing work-in-process inventory, lead time, and defect propagation simultaneously."
+    - capability: "Shop floor leadership"
+      priority: "critical"
+      description: "A production leader, not a theorist. Someone who changes work habits by demonstrating results on the factory floor, not by writing reports for management. Must earn the trust of workers and foremen through visible competence."
+    - capability: "Systems thinking about waste"
+      priority: "critical"
+      description: "Ability to see waste invisible to conventional accounting — overproduction, waiting, unnecessary transport, excess inventory, unnecessary motion, overprocessing, defects. Must treat the entire production flow as a system, not optimize individual operations."
+    - capability: "Cross-domain principle transfer"
+      priority: "important"
+      description: "Ability to find production principles in non-manufacturing domains — textiles, retail, logistics — and adapt them to automotive manufacturing."
+
+  intellectual_fit:
+    - domain: "Manufacturing as flow, not batch"
+      description: "Must see production as a river that should flow continuously, not as a series of pools that accumulate inventory. Every stoppage, every queue, every buffer is a symptom of a system problem."
+    - domain: "Quality as built-in, not inspected"
+      description: "Must understand that inspection after production is waste — quality must be ensured during production. The Toyoda family's jidoka principle is the foundation."
+
+  method_requirements:
+    preferred_approach:
+      - "direct shop floor experimentation"
+      - "small-scale pilot before full-scale rollout"
+      - "demonstration by results, not by proposal"
+    autonomy_level: "autonomous"
+    time_commitment: "full_time"
+
+constraints:
+  - type: "budget"
+    description: "No capital for new equipment. All improvements must be achieved with existing machinery. The company is running out of money — there is no investment budget for the machine shop."
+  - type: "technical"
+    description: "Cannot copy Ford's model. The domestic market demands multiple vehicle types in small quantities. Dedicated high-volume lines for single models are economically impossible."
+  - type: "political"
+    description: "The workers' union is strong and vigilant. Changes must not appear to be speedups or disguised layoffs. Multi-machine operation and line rebalancing will face resistance unless workers see the benefit."
+  - type: "timeline"
+    description: "Kiichiro Toyoda's three-year challenge. Results must be visible quickly — the company may not survive long enough for a slow transformation. But the full system will take decades to mature."
+
+what_we_offer:
+  - resource: "Complete authority over the machine shop"
+    description: "The machine shop manager has operational authority to rearrange equipment, reassign workers, change scheduling methods, and run experiments within the section. Management will not micromanage."
+  - resource: "Crisis-driven management tolerance"
+    description: "Orthodoxy has failed — Toyota is near bankruptcy. Management is willing to tolerate radical experiments they would normally reject because the alternative is going out of business."
+  - resource: "Jidoka heritage from the textile operation"
+    description: "Workers and managers who transferred from Toyoda Spinning and Weaving understand the jidoka principle — machines that detect their own errors. This is cultural infrastructure for quality-first production."
+  - resource: "The pressure of survival"
+    description: "The urgency is real. If the production system does not improve dramatically, the company dies. This pressure removes bureaucratic resistance to change — but it also means there is no margin for error in the experiments."
+
+active_problems:
+  - problem: "Overproduction and excess inventory"
+    status: "unsolved"
+    what_exists: "Batch-and-push scheduling — production runs are sized for machine efficiency, not for downstream demand. Inventory accumulates between operations, hiding defects and consuming scarce capital in work-in-process."
+    what_is_missing: "A scheduling method that ties production to actual demand. A signal system where downstream processes tell upstream processes what to make and when. Elimination of the 'just in case' mentality that drives overproduction."
+  - problem: "Long changeover times forcing large batch sizes"
+    status: "unsolved"
+    what_exists: "Stamping press die changes take hours. This makes small batches uneconomical — the changeover time is amortized over the batch size, so economic logic demands large runs. But large runs create overproduction."
+    what_is_missing: "Methods to reduce changeover time from hours to minutes. If changeover is fast, small batches become economical and production can respond to actual demand instead of forecasts."
+  - problem: "Defects discovered too late in the process"
+    status: "partially_solved"
+    what_exists: "End-of-line inspection catches defects after they are made. The jidoka principle from Toyoda Sakichi's loom exists conceptually — machines should stop when they detect errors — but it is not systematically applied to the production line."
+    what_is_missing: "A system where every worker and every machine can stop the line immediately when a defect is detected. Quality built into the process, not added by inspection afterward. An andon system — visual signals that make problems visible instantly."

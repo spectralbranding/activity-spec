@@ -1,0 +1,165 @@
+# Activity Specification Protocol — I Want
+# Subject: Claude Shannon, Bell Labs researcher
+# Date: December 1946
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_want"
+  spec_date: "1946-12-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Back at Bell Labs after wartime cryptography work. Age 30. The classified
+      paper on secrecy systems is written but cannot be published yet. Research
+      freedom restored. Surrounded by extraordinary colleagues — Hamming, Tukey,
+      Brattain, Bardeen — but working mostly alone on a problem that has been
+      forming since the 1937 master's thesis.
+    what_comes_next: >
+      Developing a general mathematical theory of communication. The core ideas —
+      entropy as information measure, channel capacity, source coding — are taking
+      shape as a unified framework. Needs a venue that reaches both mathematicians
+      and communication engineers.
+    hindsight_note: >
+      "A Mathematical Theory of Communication" will be published in the Bell
+      System Technical Journal, July and October 1948. It will create the field
+      of information theory, define the bit, establish the noisy-channel coding
+      theorem, and become one of the most cited scientific papers of the 20th
+      century.
+
+identity:
+  name: "Claude Elwood Shannon"
+  location: "Murray Hill, New Jersey"
+  languages:
+    - "English"
+
+activity:
+  one_line: "Formalize the mathematical structure of signal transmission, separating information content from physical medium and semantic meaning."
+  description: >
+    Develop a general theory of communication grounded in probability theory and
+    mathematical rigor. Quantify information as reduction of uncertainty. Prove
+    fundamental limits on how much information a noisy channel can carry, and how
+    efficiently a source can be encoded — independent of what the messages mean
+    or how the channel is physically implemented.
+  method: >
+    Mathematical abstraction from engineering problems. Take a specific
+    communication channel — telegraph, telephone, teletype — strip away the
+    physical implementation details and semantic content, keep only the
+    mathematical structure. Build from definitions and axioms to theorems. Same
+    method as the 1937 thesis: relay circuits ARE Boolean algebra. Now:
+    communication IS entropy reduction.
+
+positioning:
+  core_distinction: "Treats communication as a mathematical problem about uncertainty, not an engineering problem about signals or a philosophical problem about meaning."
+  comparison:
+    - others: "Nyquist and Hartley studied specific telegraph and telephone channel properties."
+      this_work: "Abstracts away the specific channel to find universal laws governing all communication."
+    - others: "Wiener approaches stochastic processes from the continuous-signal filtering perspective."
+      this_work: "Starts from discrete messages and probability distributions, then extends to continuous channels."
+    - others: "Engineers optimize specific modulation schemes for specific channels."
+      this_work: "Proves what is theoretically possible before asking how to achieve it in hardware."
+
+frameworks_or_outputs:
+  - name: "A Symbolic Analysis of Relay and Switching Circuits"
+    domain: "electrical engineering, mathematical logic"
+    description: "Proved that Boolean algebra describes the behavior of electrical switching circuits. Enabled systematic design of digital circuits."
+    status: "published"
+    url: ""
+  - name: "An Algebra for Theoretical Genetics"
+    domain: "applied mathematics, genetics"
+    description: "PhD dissertation applying mathematical formalism to population genetics."
+    status: "published"
+    url: ""
+  - name: "Communication Theory of Secrecy Systems"
+    domain: "cryptography, mathematics"
+    description: "Mathematical treatment of cryptographic systems as communication channels. Written ~1945, still classified."
+    status: "in_progress"
+    url: ""
+  - name: "A general theory of communication"
+    domain: "mathematics, communication engineering"
+    description: "Unified mathematical framework quantifying information, channel capacity, and source coding. Currently being formalized."
+    status: "in_progress"
+    url: ""
+
+intellectual_priors:
+  - author: "George Boole"
+    work: "An Investigation of the Laws of Thought (1854)"
+    contribution: "Symbolic logic as a formal algebraic system — the foundation for seeing abstract structure in concrete systems."
+  - author: "Harry Nyquist"
+    work: "Certain Factors Affecting Telegraph Speed (1924)"
+    contribution: "First quantitative relationship between transmission rate and channel bandwidth. Established that telegraph speed has mathematical limits."
+  - author: "Ralph Hartley"
+    work: "Transmission of Information (1928)"
+    contribution: "Logarithmic measure of information. Showed that information quantity is proportional to the logarithm of the number of possible messages."
+  - author: "Ludwig Boltzmann"
+    work: "Statistical mechanics and the entropy concept (1870s)"
+    contribution: "Entropy as a measure of disorder in statistical systems. The mathematical form H = -sum(p log p) connects thermodynamic entropy to probability distributions."
+  - author: "Norbert Wiener"
+    work: "Stochastic processes and statistical communication theory (ongoing)"
+    contribution: "Contemporary influence. Rigorous treatment of random processes in continuous signals. Wiener's filtering theory addresses the continuous-channel case from a different angle."
+
+origin:
+  pattern: "Structural isomorphism between seemingly unrelated domains"
+  description: >
+    The 1937 master's thesis at MIT. Electrical relay circuits and Boolean algebra
+    look like completely different subjects — one is physical hardware, the other is
+    abstract logic. The insight was that they are structurally identical: every
+    circuit has an algebraic expression, every algebraic expression has a circuit.
+    This is the recurring method — find the abstract mathematical structure hiding
+    inside a concrete engineering problem.
+  core_lesson: "When two domains share the same formal structure, a theorem in one is automatically a theorem in the other."
+
+credentials:
+  education:
+    - degree: "BS, Electrical Engineering"
+      institution: "University of Michigan"
+      year: 1936
+    - degree: "MS, Electrical Engineering"
+      institution: "Massachusetts Institute of Technology"
+      year: 1937
+    - degree: "PhD, Mathematics"
+      institution: "Princeton University"
+      year: 1940
+  experience_arc: >
+    National Research Fellow at the Institute for Advanced Study, Princeton
+    (1940-1941). Joined Bell Telephone Laboratories in 1941 as a research
+    mathematician. Wartime work on fire-control systems and cryptographic
+    analysis. Now pursuing fundamental research in communication theory with
+    full intellectual freedom.
+
+collaboration:
+  what_I_respond_to:
+    - "Precisely formulated mathematical problems"
+    - "Structural analogies between different domains"
+    - "Engineering problems that conceal elegant mathematics"
+    - "Puzzles and games with hidden formal structure"
+  what_I_do_not_respond_to:
+    - "Vague or open-ended questions without formal structure"
+    - "Administrative obligations and committee work"
+    - "Incremental engineering improvements without theoretical interest"
+    - "Requests to explain intuitions before they are formalized"
+  preferred_format:
+    - "Written mathematical proofs"
+    - "Technical memoranda"
+    - "Blackboard derivations with one or two colleagues"
+  channels:
+    office: "Bell Telephone Laboratories, Murray Hill, NJ"
+
+active_work:
+  - topic: "Mathematical theory of communication"
+    status: "in_progress"
+    need: >
+      A publication venue that reaches both mathematicians and communication
+      engineers simultaneously. The theory is too mathematical for pure
+      engineering journals and too applied for pure mathematics journals.
+  - topic: "Entropy as information measure"
+    status: "in_progress"
+    need: >
+      Peer review from mathematicians who understand both probability theory
+      and communication engineering — colleagues who can verify the axiomatics
+      and appreciate the engineering implications.
+  - topic: "Channel capacity theorem"
+    status: "in_progress"
+    need: >
+      Proof that reliable communication is possible at any rate below channel
+      capacity. The existence proof is forming but the constructive coding
+      schemes remain open.

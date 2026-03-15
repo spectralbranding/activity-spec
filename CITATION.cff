@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Activity Specification Protocol (ASP)"
+message: "If you use this specification, please cite it as below."
+type: software
+authors:
+  - family-names: Zharnikov
+    given-names: Dmitry
+    orcid: "https://orcid.org/0009-0000-6893-9231"
+repository-code: "https://github.com/spectralbranding/activity-spec"
+url: "https://spectralbranding.com"
+license: MIT
+version: "1.0.0"
+date-released: "2026-03-15"
+keywords:
+  - activity-specification
+  - professional-profile
+  - machine-readable
+  - yaml
+  - ai-discovery
+  - collaboration-matching
+abstract: >
+  Activity Specification Protocol (ASP) is a YAML-based standard for
+  machine-readable professional profiles. It describes what people do
+  (not who they are) and what organizations need (not what job title
+  they're hiring for). Specifications are LLM-generated, git-tracked,
+  and LLM-matched. Five historical demos demonstrate the format using
+  figures from the history of science and engineering.

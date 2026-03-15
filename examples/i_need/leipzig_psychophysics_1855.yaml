@@ -1,0 +1,183 @@
+# Activity Specification Protocol — "I Need"
+# Historical example: The nascent field of psychophysics, February 1855
+# An unusual case — the "organization" is a scientific program that does not
+# yet exist. Framed as: what would the field need to establish itself?
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_need"
+  spec_date: "1855-02-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Psychophysics as a named field does not yet exist. Ernst Heinrich Weber
+      has established the empirical regularity (JND proportional to stimulus
+      magnitude) but has not proposed a general mathematical law. Johann
+      Friedrich Herbart demonstrated the aspiration to mathematical psychology
+      but lacked experimental grounding. The gap between physics and philosophy
+      of mind is institutionally unclaimed — no university chair, no journal,
+      no methodology, no name for the discipline.
+    what_exists: >
+      Weber's experimental results on touch and weight discrimination (1834,
+      1846). Herbart's theoretical framework for mathematical psychology
+      (1824). Bernoulli's logarithmic utility function (1738) as a structural
+      parallel in economics. German university infrastructure with well-
+      equipped physics laboratories. A philosophical tradition (Leibniz,
+      Kant) that takes the question of inner experience seriously.
+    hindsight_note: >
+      The field was founded by Fechner's "Elemente der Psychophysik" (1860).
+      Psychophysics became the methodological foundation for experimental
+      psychology. Wundt's 1879 laboratory at Leipzig — the first psychology
+      laboratory — used Fechner's three methods directly. The field Fechner
+      specified into existence produced an entire discipline.
+
+organization:
+  name: "Quantitative psychophysics (nascent field, not yet named)"
+  location: "University of Leipzig and the German academic system"
+  domain: "The unmapped territory between physics and philosophy of mind"
+
+opportunity:
+  one_line: >
+    Bridge physics and philosophy of mind by establishing quantitative laws
+    of sensation through systematic experimentation.
+  description: >
+    The most fundamental question in the science of mind — whether inner
+    experience has measurable structure — awaits someone who can answer it
+    empirically rather than philosophically. Weber's work on just-noticeable
+    differences has opened a crack in the wall between the physical and the
+    mental. What is needed is someone who can widen that crack into a doorway
+    — deriving a general mathematical law, developing replicable experimental
+    methods, and publishing a comprehensive treatise that forces the scientific
+    community to take the result seriously.
+  urgency: "exploratory"
+
+requirements:
+  capabilities_needed:
+    - capability: "Experimental physics methodology"
+      priority: "critical"
+      description: >
+        Rigorous training in physical measurement, apparatus design, and
+        experimental control. The person must be able to design stimulus
+        delivery systems with the precision of physics instrumentation and
+        conduct experiments with the statistical rigor that physicists would
+        recognize as legitimate.
+    - capability: "Mathematical derivation from empirical data"
+      priority: "critical"
+      description: >
+        Ability to move from empirical regularities (Weber's proportional JND)
+        to a general mathematical law through integration. Specifically:
+        recognizing that dS = k * dI/I integrates to S = k * log(I/I0).
+    - capability: "Philosophical commitment to inner experience as real"
+      priority: "critical"
+      description: >
+        A physicist who does not dismiss sensation as unmeasurable. A
+        philosopher who does not dismiss mathematics as inappropriate for
+        the mind. This combination is extraordinarily rare — most scientists
+        are firmly on one side of the divide.
+    - capability: "Extreme methodical patience"
+      priority: "important"
+      description: >
+        Psychophysical experiments require thousands of individual trials per
+        modality. Each data point is a single threshold judgment by a single
+        subject. The person must be willing to spend years accumulating
+        sufficient evidence before claiming a law.
+
+  intellectual_fit:
+    - domain: "Physics"
+      description: >
+        Must understand measurement, error, and experimental design at the
+        level of a university physics professor. The work will be judged
+        by physicists and must meet their standards of evidence.
+    - domain: "Philosophy of mind"
+      description: >
+        Must take the inner world seriously enough to devote a career to
+        measuring it. Ideally has a personal or philosophical reason to
+        believe that consciousness is not epiphenomenal.
+    - domain: "Mathematics"
+      description: >
+        Sufficient command of calculus to derive the logarithmic law from
+        Weber's differential relation and to handle the statistical treatment
+        of threshold data.
+
+  method_requirements:
+    preferred_approach:
+      - "Experimental"
+      - "Quantitative"
+      - "Mathematical derivation from empirical data"
+    autonomy_level: "autonomous"
+    time_commitment: "full_time"
+
+constraints:
+  - type: "political"
+    description: >
+      Extreme skepticism from both sides of the institutional divide.
+      Physicists consider sensation unmeasurable and therefore outside science.
+      Philosophers consider mathematics inappropriate for the study of mind.
+      Anyone who attempts this work will face dismissal from both camps.
+  - type: "budget"
+    description: >
+      No funding category exists for psychophysics. University budgets are
+      allocated to established fields — physics, philosophy, medicine. Any
+      researcher must either hold a position in an adjacent field or work
+      without institutional support.
+  - type: "technical"
+    description: >
+      No experimental apparatus has been designed for psychophysical
+      measurement. Equipment must be adapted from physics laboratories —
+      weights, light sources, tuning forks — with modifications for
+      controlled stimulus presentation to human subjects.
+
+what_we_offer:
+  - resource: "The founding of an entirely new science"
+    description: >
+      Whoever establishes the quantitative laws of sensation will found a
+      discipline. Not a contribution to an existing field — the creation of
+      a field. University chairs, a methodology, a body of law that outlives
+      the founder.
+  - resource: "The first bridge between objective measurement and subjective experience"
+    description: >
+      A successful psychophysics would resolve — empirically, not
+      philosophically — a question that has occupied thinkers since Aristotle.
+      The demonstration that inner experience has mathematical structure would
+      reshape the relationship between the natural sciences and the study
+      of mind.
+  - resource: "Weber's experimental foundation"
+    description: >
+      The empirical groundwork already exists. Weber's decades of careful
+      measurement have established the key regularity (dI/I = constant).
+      The next step is mathematical — integration and generalization — not
+      starting from nothing.
+
+active_problems:
+  - problem: "Can sensation be measured at all?"
+    status: "partially_solved"
+    what_exists: >
+      Weber demonstrated that just-noticeable differences are proportional to
+      stimulus intensity — a quantitative regularity in sensation. But this
+      is a differential relation, not a measurement of sensation itself.
+    what_is_missing: >
+      A general mathematical function S = f(I) relating stimulus intensity
+      to sensation magnitude. A demonstration that this function holds across
+      multiple sense modalities. A set of replicable experimental methods
+      that any trained researcher can apply.
+  - problem: "What is the mathematical form of the psychophysical law?"
+    status: "theoretical"
+    what_exists: >
+      Weber's law gives dI/I = constant at threshold. Bernoulli's utility
+      theory suggests logarithmic compression of subjective value. Leibniz's
+      continuity principle implies the function must be smooth.
+    what_is_missing: >
+      The explicit derivation: if dS = k * dI/I, then S = k * log(I/I0).
+      Experimental verification that this logarithmic form holds across
+      weight, brightness, and tone. Determination of modality-specific
+      constants.
+  - problem: "How should psychophysical experiments be conducted?"
+    status: "unsolved"
+    what_exists: >
+      Weber's experimental procedures for weight discrimination and tactile
+      thresholds. General physics laboratory methodology for controlled
+      measurement.
+    what_is_missing: >
+      A systematic methodology for psychophysical experimentation — multiple
+      complementary methods that converge on the same threshold values,
+      compensating for the biases inherent in any single approach.
