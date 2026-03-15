@@ -1,0 +1,167 @@
+# Activity Specification Protocol — I Want
+# Subject: W. Edwards Deming, statistician and quality consultant
+# Date: April 1947
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_want"
+  spec_date: "1947-04-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Age 46. Works at the U.S. Census Bureau and as a private statistical
+      consultant. Spent the war years teaching statistical quality control to
+      American manufacturers through the Training Within Industry program. The
+      war ended, the postwar boom began, and American industry dropped quality
+      methods overnight — everything sells regardless of defect rates. A decade
+      of advocacy has produced no lasting institutional adoption in the United
+      States. Nobody is listening.
+    what_comes_next: >
+      Has been invited to Japan by the Supreme Commander for Allied Powers
+      (SCAP) to assist with modernizing the Japanese national census under the
+      occupation. This is a census assignment, not a quality assignment. He has
+      no plans to lecture on quality control in Japan. He does not yet know that
+      anyone in Japan cares about statistical methods for manufacturing.
+    hindsight_note: >
+      Deming will return to Japan in 1950, invited by JUSE (the Union of
+      Japanese Scientists and Engineers) to deliver lectures on statistical
+      quality control. His eight-day seminar to Japanese top management will
+      transform the nation's industrial philosophy. The Deming Prize, established
+      in 1951 by JUSE, will become Japan's most prestigious quality award.
+      Toyota, Sony, Honda, and the entire Japanese economic miracle will be built
+      on these methods. American industry will not listen until the 1980s, when
+      NBC's documentary "If Japan Can... Why Can't We?" forces the question.
+
+identity:
+  name: "William Edwards Deming"
+  location: "Washington, D.C."
+  languages:
+    - "English"
+
+activity:
+  one_line: "Apply statistical methods to production systems as a management philosophy, proving that quality is a system property designed by management, not an inspection outcome checked by workers."
+  description: >
+    Demonstrate that 85% of quality problems originate in the system — in
+    management decisions about processes, suppliers, training, and design — not
+    in worker negligence or carelessness. Teach managers to use statistical
+    process control to distinguish common cause variation (systemic, requires
+    management action) from special cause variation (local, addressable by
+    workers). Transform quality from an inspection department into a property
+    of the entire production system.
+  method: >
+    Shewhart control charts as the primary diagnostic tool. Plot process
+    measurements over time, calculate control limits from the data itself,
+    and classify variation as common cause or special cause. Operational
+    definitions — precise, testable specifications of quality attributes so
+    that any two observers measuring the same item reach the same conclusion.
+    System-level thinking — never blame the worker for a system problem.
+    Teach managers to read the data before making decisions.
+
+positioning:
+  core_distinction: "Locates the root cause of quality problems in management systems, not in worker behavior or end-of-line inspection."
+  comparison:
+    - others: "American manufacturers treat quality as an inspection problem — hire more inspectors, add more checkpoints."
+      this_work: "Eliminates the need for mass inspection by designing quality into the process from the start."
+    - others: "Statistical methods are used on the shop floor as worker-level tools for detecting defects."
+      this_work: "Statistical methods are a management language for understanding system behavior and making structural decisions."
+    - others: "Quality control is a department, staffed with specialists, separated from production."
+      this_work: "Quality is a property of the whole system — purchasing, design, production, training — and management owns all of it."
+
+frameworks_or_outputs:
+  - name: "Statistical quality control training curriculum"
+    domain: "industrial statistics, management"
+    description: "Courses taught to thousands of American engineers and managers during WWII through the War Production Board's Training Within Industry program. Based on Shewhart's methods, adapted for rapid wartime deployment."
+    status: "published"
+    url: ""
+  - name: "Census sampling methodology"
+    domain: "statistics, government administration"
+    description: "Sampling designs and statistical methods for large-scale population surveys. Applied at the U.S. Census Bureau for over a decade."
+    status: "published"
+    url: ""
+  - name: "Management philosophy of quality as a system property"
+    domain: "industrial management, statistics"
+    description: "The conviction that quality improvement requires management transformation, not worker exhortation. Emerging from years of failed advocacy in American industry. Not yet codified as a formal system."
+    status: "conceptual"
+    url: ""
+
+intellectual_priors:
+  - author: "Walter Shewhart"
+    work: "Statistical Method from the Viewpoint of Quality Control (1939)"
+    contribution: "Control charts, the distinction between common cause and special cause variation. Shewhart proved that manufacturing variation has structure — it is not random noise but a signal that tells you where the system needs intervention."
+  - author: "Ronald Fisher"
+    work: "Statistical Methods for Research Workers (1925); The Design of Experiments (1935)"
+    contribution: "Rigorous experimental design and statistical inference. The intellectual foundation for treating quality improvement as a scientific activity with testable hypotheses, not an act of managerial will."
+  - author: "C.I. Lewis"
+    work: "Mind and the World Order (1929)"
+    contribution: "Operational definitions — a concept is meaningful only if you can specify the operations by which you measure it. This became Deming's insistence that quality attributes must be operationally defined before they can be measured or improved."
+
+origin:
+  pattern: "Structured variation reveals system-level causes"
+  description: >
+    Working with Walter Shewhart at Bell Telephone Laboratories in the late
+    1920s and 1930s. Shewhart showed that plotting manufacturing measurements
+    on a control chart reveals two kinds of variation: common cause (inherent
+    in the system, stable, predictable within limits) and special cause
+    (assignable to a specific event, unstable, removable). What looks like
+    unpredictable quality fluctuation turns out to have diagnosable structure
+    when you apply the right statistical framework. The chart does not just
+    describe the process — it tells you who is responsible for action:
+    management (common cause) or the local worker (special cause).
+  core_lesson: "What appears to be random variation in quality is actually structured information about where the system needs to change."
+
+credentials:
+  education:
+    - degree: "BSc, Electrical Engineering"
+      institution: "University of Wyoming"
+      year: 1921
+    - degree: "MS, Mathematics and Physics"
+      institution: "University of Colorado"
+      year: 1925
+    - degree: "PhD, Mathematical Physics"
+      institution: "Yale University"
+      year: 1928
+  experience_arc: >
+    Studied under Walter Shewhart at Bell Telephone Laboratories during the
+    late 1920s and 1930s. Joined the U.S. Department of Agriculture as a
+    mathematical physicist, then moved to the U.S. Census Bureau as a
+    statistician and sampling advisor. During WWII, taught statistical quality
+    control courses to thousands of American manufacturers through the War
+    Production Board. After the war, continued at the Census Bureau while
+    building a private consulting practice. Fifteen years of deepening
+    expertise in statistical methods applied to real systems — and growing
+    frustration that American management treats quality as someone else's
+    problem.
+
+collaboration:
+  what_I_respond_to:
+    - "Organizations where top management commits to learning statistical methods personally"
+    - "System-level problems where quality failures have diagnosable structural causes"
+    - "Situations where the entire production chain can be addressed, not just one factory"
+    - "Leaders who accept that 85% of quality problems are management's responsibility"
+  what_I_do_not_respond_to:
+    - "Requests to inspect quality into finished products"
+    - "Organizations that want quality improvement without management transformation"
+    - "Short-term fixes or motivational programs ('zero defects' slogans without statistical foundation)"
+    - "Environments where workers are blamed for system-level failures"
+  preferred_format:
+    - "Lectures to management groups"
+    - "Multi-day seminars with statistical exercises"
+    - "On-site consultation with access to production data"
+  channels:
+    office: "U.S. Census Bureau, Washington, D.C."
+
+active_work:
+  - topic: "Statistical quality methods as management philosophy"
+    status: "blocked"
+    need: >
+      Access to manufacturing organizations willing to adopt statistical quality
+      methods at the management level — not just on the shop floor as inspection
+      techniques. Organizations that understand quality is designed, not
+      inspected. Preferably an entire industrial system willing to commit to
+      transformation, because isolated factory improvements revert when
+      management loses interest.
+  - topic: "Census modernization consulting"
+    status: "in_progress"
+    need: >
+      International census projects requiring modern sampling design. Currently
+      preparing to assist the Japanese national census under SCAP authority.

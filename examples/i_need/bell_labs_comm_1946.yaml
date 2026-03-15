@@ -1,0 +1,108 @@
+# Activity Specification Protocol — I Need
+# Subject: Bell Telephone Laboratories, Mathematics Research Center
+# Date: December 1946
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_need"
+  spec_date: "1946-12-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Post-WWII expansion of communication infrastructure. AT&T's regulated
+      monopoly funds the world's premier industrial research laboratory. Long-
+      distance telephony, teletype, microwave relay, and early television are all
+      growing rapidly. The engineering works, but the theoretical foundations for
+      understanding channel capacity, noise limits, and efficient coding do not
+      exist. Nyquist (1924) and Hartley (1928) provided fragments, not a unified
+      theory.
+    what_exists: >
+      Nyquist's telegraph speed analysis. Hartley's logarithmic information
+      measure. Wiener's statistical filtering theory (continuous signals).
+      Hamming's early work on error detection. Extensive practical engineering
+      knowledge accumulated over decades of telephone system operation. But no
+      general mathematical framework connecting these pieces.
+    hindsight_note: >
+      Bell Labs will publish Shannon's "A Mathematical Theory of Communication"
+      in BSTJ July/October 1948, creating information theory. The lab will also
+      produce the transistor (1947), Unix (1969), the laser, and the cosmic
+      microwave background discovery. It will win 9 Nobel Prizes.
+
+organization:
+  name: "Bell Telephone Laboratories"
+  location: "Murray Hill, New Jersey"
+  domain: "Communication systems research and development"
+
+opportunity:
+  one_line: "Develop the mathematical foundations for communication — a general theory of what communication IS, not just how specific channels work."
+  description: >
+    The telephone network is growing but its theoretical limits are unknown.
+    Engineering improvements are incremental and empirical. A general theory
+    would answer fundamental questions: How much information can a noisy channel
+    carry? What is the most efficient encoding? Are there absolute limits, and
+    if so, what determines them? The theory must be rigorous enough for
+    mathematicians and useful enough for engineers.
+  urgency: "near_term"
+
+requirements:
+  capabilities_needed:
+    - capability: "Mathematical formalization of communication processes"
+      priority: "critical"
+      description: "Ability to take engineering problems in telephony, telegraphy, and data transmission and express them as rigorous mathematical structures with provable theorems."
+    - capability: "Probability theory and stochastic processes"
+      priority: "critical"
+      description: "Deep working knowledge of measure theory, random variables, ergodic theory, and Markov processes — the mathematical tools needed to model noisy channels."
+    - capability: "Cross-domain abstraction"
+      priority: "important"
+      description: "Ability to see structural identity across different physical communication systems and extract the common mathematical framework."
+    - capability: "Clear technical exposition"
+      priority: "important"
+      description: "Ability to write for an audience of both mathematicians and engineers. The Bell System Technical Journal readership spans both communities."
+
+  intellectual_fit:
+    - domain: "Pure mathematics applied to engineering"
+      description: "Must think like a mathematician but care about engineering problems. Neither a pure theorist indifferent to applications nor an engineer uninterested in foundations."
+    - domain: "Statistical mechanics and thermodynamics"
+      description: "Familiarity with Boltzmann's entropy and Gibbs's statistical methods would provide ready-made mathematical structures for the information problem."
+
+  method_requirements:
+    preferred_approach:
+      - "theoretical"
+      - "mathematical proof"
+      - "abstraction from engineering cases"
+    autonomy_level: "autonomous"
+    time_commitment: "full_time"
+
+constraints:
+  - type: "political"
+    description: "Results should eventually connect to telephone system engineering, though no specific timeline or deliverable is imposed. Bell Labs funds basic research but AT&T's board expects long-term relevance."
+  - type: "technical"
+    description: "Publication must not compromise any classified wartime work. Cryptographic applications of communication theory must be handled carefully."
+  - type: "technical"
+    description: "The theory must be publishable in the Bell System Technical Journal — accessible to the lab's engineering audience, not solely to pure mathematicians."
+
+what_we_offer:
+  - resource: "Complete intellectual freedom"
+    description: "Research staff have no assigned projects. Choose your own problems. No management interference in research direction. Hendrik Kramers called it 'the closest thing to a university that isn't one.'"
+  - resource: "Bell System Technical Journal"
+    description: "In-house publication with rigorous peer review, reaching both the mathematical and engineering communities. Publishes long, detailed technical papers that commercial journals would not accept."
+  - resource: "Extraordinary colleagues"
+    description: "Richard Hamming (error-correcting codes), John Tukey (statistics, combinatorics), Brattain and Bardeen (solid-state physics), and dozens of other first-rate scientists and engineers. Daily lunch conversations cross every disciplinary boundary."
+  - resource: "Engineering problems as raw material"
+    description: "Direct access to the largest communication network in the world. Real noise data, real channel measurements, real coding problems. Theoretical work can be immediately tested against operational reality."
+  - resource: "Competitive compensation and stability"
+    description: "AT&T's regulated monopoly provides stable, generous funding. No grant applications. No teaching obligations. Research is the job."
+
+active_problems:
+  - problem: "Channel capacity limits"
+    status: "unsolved"
+    what_exists: "Nyquist's bandwidth-rate relationship for noiseless channels (1924). Hartley's logarithmic measure (1928). Practical engineering knowledge that noise limits transmission rate, but no theorem stating the exact limit."
+    what_is_missing: "A mathematical proof of the maximum rate at which information can be reliably transmitted through a noisy channel. A formula for channel capacity in terms of signal power and noise power."
+  - problem: "Optimal source coding"
+    status: "unsolved"
+    what_exists: "Morse code assigns shorter codes to common letters — an intuitive approach to efficient encoding. Teletype uses fixed-length codes. No theory of what the minimum encoding length should be."
+    what_is_missing: "A mathematical framework for measuring the information content of a source and proving the minimum number of symbols needed to encode it without loss."
+  - problem: "Error correction in digital transmission"
+    status: "partially_solved"
+    what_exists: "Hamming is developing error-detecting and error-correcting codes for the relay calculator. Parity checks exist as ad hoc engineering tools."
+    what_is_missing: "A theoretical foundation connecting coding redundancy to channel noise. How much redundancy is enough? Is there a limit below which errors cannot be corrected?"

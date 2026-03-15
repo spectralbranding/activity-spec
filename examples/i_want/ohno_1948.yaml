@@ -1,0 +1,162 @@
+# Activity Specification Protocol — I Want
+# Subject: Taiichi Ohno, Toyota Motor Company machine shop manager
+# Date: October 1948
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_want"
+  spec_date: "1948-10-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Machine shop manager at Toyota's Honsha plant in Toyota City (Koromo).
+      Age 36. Toyota produces roughly 2,685 vehicles per year. Ford produces
+      7,000 per day. Kiichiro Toyoda, the company president, has set the
+      challenge: catch up with American automotive productivity within three
+      years. Japan's postwar economy is shattered — raw materials are scarce,
+      capital is nonexistent, and the domestic market demands variety (trucks,
+      cars, buses) in small volumes. Ford's mass production model requires huge
+      volumes of identical units that Toyota cannot sell.
+    what_comes_next: >
+      Redesigning production flow in the machine shop. The insight forming is
+      from American supermarket systems — a supermarket restocks shelves only
+      when a customer removes an item. Production triggered by consumption, not
+      by schedule. Pull, not push. This is the opposite of Ford's batch-and-
+      push model. If the principle can be transferred to manufacturing, Toyota
+      can achieve efficiency without volume.
+    hindsight_note: >
+      Ohno will develop the Toyota Production System over 25 years (1948-1975).
+      Kanban, just-in-time, jidoka, andon, single-piece flow, rapid changeover.
+      "The Machine That Changed the World" (Womack, Jones, Roos, 1990) will
+      bring TPS to global attention as "Lean manufacturing." Toyota will become
+      the world's largest automaker. The machine shop experiment will become the
+      most influential production system in industrial history.
+
+identity:
+  name: "Taiichi Ohno"
+  location: "Toyota City (Koromo), Aichi Prefecture, Japan"
+  languages:
+    - "Japanese"
+
+activity:
+  one_line: "Eliminate waste from manufacturing by making only what is needed, when it is needed, in the amount needed — redesigning production from push to pull."
+  description: >
+    Redesign production flow so that downstream processes signal upstream
+    processes what to produce and when. No part is made until the next process
+    needs it. No inventory accumulates between steps. Defects are caught
+    immediately because there is no buffer stock to hide them. The goal is not
+    faster production — it is the elimination of everything that does not add
+    value to the product.
+  method: >
+    Direct observation on the shop floor — genchi genbutsu, go and see. Stand
+    in the circle and watch the process for hours. Ask "why?" five times to
+    find root causes. Reverse the flow of production information: downstream
+    processes signal upstream what they need. Small-lot production with rapid
+    tool changeover to eliminate the economic argument for large batches. Learn
+    from non-manufacturing systems — supermarkets, textile looms — and
+    transfer principles to automotive production.
+
+positioning:
+  core_distinction: "Achieves high efficiency through waste elimination in small-lot production, not through economies of scale in high-volume batch production."
+  comparison:
+    - others: "Ford's system pushes production forward in large batches based on forecasted demand — efficiency comes from volume and specialization."
+      this_work: "Pulls production backward from actual demand — efficiency comes from eliminating inventory, waiting, overproduction, and defects."
+    - others: "American manufacturers accept defect rates as a cost of speed and fix quality through end-of-line inspection."
+      this_work: "Builds quality into the process itself — any worker can stop the production line when a defect is detected (jidoka), preventing defects from propagating downstream."
+    - others: "Industrial engineers optimize individual operations in isolation — faster lathe, faster drill, faster press."
+      this_work: "Optimizes the flow between operations — a fast lathe feeding a slow drill creates waste (inventory), not value."
+
+frameworks_or_outputs:
+  - name: "Jidoka (automation with human intelligence)"
+    domain: "manufacturing, quality control"
+    description: "Principle inherited from Toyoda Sakichi's automatic loom: machines should detect their own errors and stop. Extended to production lines — workers stop the line when they detect a defect, preventing defective products from moving downstream."
+    status: "in_progress"
+    url: ""
+  - name: "Pull-based production scheduling"
+    domain: "manufacturing, production management"
+    description: "Concept forming from supermarket observation: production is triggered by actual consumption, not by forecast or schedule. Downstream processes withdraw what they need; upstream processes produce only what was withdrawn."
+    status: "conceptual"
+    url: ""
+  - name: "Waste elimination (muda)"
+    domain: "manufacturing, process improvement"
+    description: "Systematic identification and removal of seven types of waste: overproduction, waiting, transport, overprocessing, inventory, motion, and defects. Every activity that does not add value to the product is waste."
+    status: "in_progress"
+    url: ""
+
+intellectual_priors:
+  - author: "Toyoda Sakichi"
+    work: "Automatic loom with warp-thread breakage stop (Type G, 1924)"
+    contribution: "Jidoka — automation with human intelligence. The loom stops itself when a thread breaks, preventing defective cloth. A machine that detects its own errors. Ohno extends this from a single machine to an entire production line."
+  - author: "Henry Ford"
+    work: "Today and Tomorrow (1926)"
+    contribution: "Continuous flow production — the assembly line eliminates waiting between operations. Ohno admires Ford's flow principle but rejects Ford's dependence on high volume and identical products. The insight to keep is flow; the insight to discard is batch-and-push scheduling."
+  - author: "American supermarket systems"
+    work: "Pull-based shelf replenishment (observed or read about, late 1940s)"
+    contribution: "A supermarket restocks only what customers have removed. The shelf is a buffer with a maximum level; withdrawal triggers replenishment. This is the operational principle behind kanban — production triggered by consumption, not by forecast."
+
+origin:
+  pattern: "Principles transfer across domains when the underlying logic matches"
+  description: >
+    Textile mill background. Toyoda Sakichi's automatic loom embodied a
+    principle: machines should detect their own errors and stop. This is jidoka.
+    Ohno entered Toyota from the Toyoda textile operation and carried the
+    principle with him. A loom that stops when thread breaks becomes a
+    production line that stops when a defect appears. A supermarket shelf that
+    restocks when emptied becomes a manufacturing process that produces only
+    when the next process needs parts. The principles are not metaphors — they
+    are direct transfers of operational logic from one domain to another.
+  core_lesson: "The right production principle discovered in textiles or retail can transform automotive manufacturing — domain boundaries are artificial."
+
+credentials:
+  education:
+    - degree: "Mechanical Engineering"
+      institution: "Nagoya Technical High School"
+      year: 1932
+  experience_arc: >
+    Joined Toyoda Spinning and Weaving Company (the founding family's textile
+    operation) after graduating from Nagoya Technical High School in 1932.
+    Transferred to Toyota Motor Company in 1943 when the textile and automotive
+    operations were reorganized. Rose to machine shop manager at the Honsha
+    plant. Sixteen years of manufacturing experience, spanning both textile
+    and automotive production.
+
+collaboration:
+  what_I_respond_to:
+    - "Shop floor problems observed directly — not reports or summaries"
+    - "Workers who ask why a process exists instead of accepting it"
+    - "Management that tolerates short-term disruption for systemic improvement"
+    - "Ideas from outside manufacturing that contain transferable operational logic"
+  what_I_do_not_respond_to:
+    - "Theoretical proposals without shop floor testing"
+    - "Suggestions to copy American mass production methods directly"
+    - "Arguments that batch production is more efficient based on unit cost calculations that ignore inventory and defect costs"
+    - "Reports and memos as substitutes for direct observation"
+  preferred_format:
+    - "Direct demonstration on the shop floor"
+    - "Small-scale experiments on one production line before expanding"
+    - "Face-to-face instruction with workers and supervisors"
+  channels:
+    office: "Machine Shop, Honsha Plant, Toyota Motor Company, Toyota City, Aichi Prefecture"
+
+active_work:
+  - topic: "Rearranging machine shop from functional to process layout"
+    status: "in_progress"
+    need: >
+      Management support to stop batch production despite short-term efficiency
+      losses. When machines are rearranged from functional groups (all lathes
+      together) to process sequence (machines in the order a part requires),
+      individual machine utilization drops but total flow time drops faster.
+      Management must accept lower utilization metrics.
+  - topic: "Pull-based scheduling system"
+    status: "seeking"
+    need: >
+      Permission to run one production line as a radical experiment — pull-based
+      scheduling, single-piece flow, rapid changeover. The experiment will look
+      inefficient by conventional metrics until the system stabilizes.
+  - topic: "Multi-machine operation by single workers"
+    status: "in_progress"
+    need: >
+      Workers willing to learn multiple machines instead of specializing on one.
+      The union views multi-machine operation with suspicion — it looks like a
+      speedup. Must demonstrate that the worker is not working harder, but that
+      the waiting time between operations is eliminated.

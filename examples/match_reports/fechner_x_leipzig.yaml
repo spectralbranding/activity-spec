@@ -1,0 +1,216 @@
+# Activity Specification Protocol — Match Report
+# Historical example: Fechner x nascent psychophysics, February 1855
+# Edge case: the person IS the institution. Fechner does not match to an
+# existing organization's need — he creates the field.
+
+meta:
+  schema_version: "1.0"
+  report_type: "match_report"
+  date: "1855-02-15"
+  spec_a:
+    file: "examples/i_want/fechner_1855.yaml"
+    name: "Gustav Theodor Fechner"
+    one_line: >
+      Establish quantitative laws governing the relationship between physical
+      stimuli and subjective perception.
+  spec_b:
+    file: "examples/i_need/leipzig_psychophysics_1855.yaml"
+    name: "Quantitative psychophysics (nascent field, not yet named)"
+    one_line: >
+      Bridge physics and philosophy of mind by establishing quantitative laws
+      of sensation through systematic experimentation.
+
+complementarity:
+  score: "high"
+  a_needs_b_has:
+    - a_need: >
+        Institutional tolerance for a physics professor conducting psychology
+        experiments
+      b_offers: >
+        The German university system grants extraordinary freedom to
+        established professors. Fechner's former chair and continued
+        affiliation with Leipzig provide enough institutional cover to
+        conduct unconventional research without formal approval.
+      match_quality: "partial"
+    - a_need: >
+        A scientific community willing to take quantitative psychophysics
+        seriously
+      b_offers: >
+        No such community exists yet. But the German academic tradition of
+        Wissenschaft — the unity of all knowledge under rigorous method —
+        provides cultural receptivity to a physics-trained scholar extending
+        quantitative methods into new domains.
+      match_quality: "adjacent"
+    - a_need: >
+        Subjects willing to sit through thousands of threshold measurements
+      b_offers: >
+        The University of Leipzig provides access to students and colleagues
+        who can serve as experimental subjects, as is standard practice in
+        German university research.
+      match_quality: "direct"
+  b_needs_a_has:
+    - b_need: "Experimental physics methodology"
+      a_offers: >
+        Fechner held the chair of physics at Leipzig. He published original
+        research on galvanic currents and translated major French physics
+        texts. His experimental training is at the highest level available.
+      match_quality: "direct"
+    - b_need: "Mathematical derivation from empirical data"
+      a_offers: >
+        Fechner has already recognized the integration step: dS = k * dI/I
+        yields S = k * log(I/I0). The mathematical derivation is complete
+        in principle; what remains is experimental verification.
+      match_quality: "direct"
+    - b_need: "Philosophical commitment to inner experience as real"
+      a_offers: >
+        Three years of blindness made the inner world of sensation the only
+        accessible world. "Nanna" (1848) and "Zend-Avesta" (1851) are
+        book-length philosophical commitments to the reality of consciousness
+        in nature. This is not an abstract commitment — it is experiential.
+      match_quality: "direct"
+    - b_need: "Extreme methodical patience"
+      a_offers: >
+        Fechner has been conducting systematic experiments for four years
+        with no publication date in sight. Each experiment involves hundreds
+        of trials. This is documented patience, not claimed patience.
+      match_quality: "direct"
+  gaps:
+    - side: "a"
+      unmet_need: >
+        No institutional funding category for psychophysics; Fechner must
+        work within physics infrastructure repurposed for a new domain
+      severity: "manageable"
+    - side: "b"
+      unmet_need: >
+        No peer community for methodological critique; Fechner works in
+        isolation without other psychophysicists to challenge or refine
+        his methods
+      severity: "manageable"
+
+method_compatibility:
+  score: "compatible"
+  strengths:
+    - >
+      Fechner's three psychophysical methods (limits, constant stimuli,
+      adjustment) are exactly the methodological innovation the field
+      requires — multiple converging approaches compensating for each
+      method's biases
+    - >
+      His physics training ensures the experimental apparatus meets the
+      precision standards that will make results credible to natural
+      scientists
+    - >
+      His combination of mathematical derivation and exhaustive empirical
+      verification is the exact method needed to establish a new quantitative
+      science — neither pure theory nor atheoretical data collection
+  friction_points:
+    - >
+      Fechner's philosophical works (panpsychism, the soul-life of plants)
+      risk discrediting the empirical program in the eyes of skeptical
+      physicists — the man who argues plants have souls now claims to
+      measure sensation mathematically
+    - >
+      Working alone without methodological peers means no external check
+      on experimental design or statistical treatment until publication
+
+intellectual_alignment:
+  score: "convergent"
+  shared_priors:
+    - >
+      Weber's law — the empirical foundation both the person and the field
+      are built on
+    - >
+      Leibniz's continuity principle — the philosophical basis for treating
+      the transition from unconscious to conscious sensation as a smooth
+      threshold, not a discontinuous leap
+  unique_to_a:
+    - >
+      Bernoulli's logarithmic utility — Fechner recognizes the structural
+      parallel between psychophysics and economics (subjective value is
+      logarithmic in objective quantity), suggesting the logarithmic form
+      is fundamental, not coincidental
+    - >
+      Herbart's mathematical psychology — Fechner knows the precedent and
+      knows why it failed (theoretical postulates without experimental
+      grounding), which defines his own method by opposition
+    - >
+      Personal experience of blindness and recovery — an empirical datum
+      unavailable to anyone who has not lost and regained sensory access
+      to the world
+  unique_to_b: []
+  note: >
+    Intellectual alignment is self-referential: Fechner defines both the
+    intellectual content of the field and its requirements. The "field"
+    has no intellectual priors independent of its founder. This is the
+    signature of a field-creating match — alignment is perfect because
+    one side of the match created the other. The convergence of Weber's
+    empirical law, Leibniz's continuity, Bernoulli's logarithmic utility,
+    and Herbart's aspiration toward the same mathematical form is not
+    coincidence — it is the intellectual structure that made the insight
+    of October 22, 1850 possible.
+
+positioning:
+  score: "complementary"
+  synergy_areas:
+    - >
+      The person and the field are identical in scope — Fechner is not
+      contributing to psychophysics, he is constituting it. Every
+      experimental result, methodological innovation, and mathematical
+      derivation simultaneously advances the person's work and builds
+      the field's foundation.
+    - >
+      Fechner's physics credentials provide the legitimacy the nascent
+      field needs — psychophysics is not being proposed by a philosopher
+      speculating about measurement, but by a former physics professor
+      who has actually measured.
+  tension_areas:
+    - >
+      Fechner's metaphysical commitments (panpsychism, universal
+      consciousness) exceed what the field needs to establish itself. The
+      psychophysical law can stand without the cosmology of "Zend-Avesta."
+      Future practitioners will adopt the methods while discarding the
+      metaphysics — which is both a tension and a feature of field
+      creation.
+
+recommendation:
+  fit: "strong"
+  collaboration_type: "autonomous_research"
+  concrete_first_step: >
+    Continue the experimental program. Complete threshold measurements for
+    brightness and tonal pitch to complement the existing weight data.
+    Derive the modality-specific constants. Begin drafting the comprehensive
+    treatise that will present the law, the methods, and the evidence as
+    an integrated argument for a new science.
+  risks:
+    - >
+      Single point of failure — if Fechner's health deteriorates again
+      (he is 54 and suffered a severe breakdown at 38), the entire field
+      dies with him, because no one else is working on psychophysics
+    - >
+      Publication timing — if the treatise appears before sufficient
+      experimental evidence is accumulated, skeptics will dismiss it as
+      philosophy; if it appears too late, Weber's results may be forgotten
+      or reinterpreted within existing frameworks
+    - >
+      Reputational contamination — Fechner's panpsychist publications may
+      cause serious scientists to dismiss the psychophysical work without
+      engaging with its empirical content
+  hindsight_verdict: >
+    "Elemente der Psychophysik" was published in 1860 — five years after
+    this specification date. It is one of the most consequential scientific
+    publications of the nineteenth century. The Fechner-Weber law
+    (S = k * log(I/I0)) became the first mathematical law of psychology.
+    Fechner's three psychophysical methods became the standard methodology
+    for experimental psychology. Wilhelm Wundt, who was Fechner's younger
+    colleague at Leipzig during this exact period, went on to found the
+    first experimental psychology laboratory in 1879, explicitly building
+    on Fechner's methods and institutional model. The field Fechner
+    specified into existence — alone, without funding, without peers,
+    without even a name for what he was doing — produced experimental
+    psychology. The single point of failure risk did not materialize:
+    Fechner lived until 1887, long enough to see his methods become an
+    institution. The reputational risk partially materialized — his
+    metaphysics was indeed discarded, but the empirical work survived
+    on its own merits. The match was as strong as any in the history of
+    science, precisely because it was self-referential: the person who
+    needed the field was the person who created it.

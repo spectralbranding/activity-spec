@@ -1,0 +1,213 @@
+# Activity Specification Protocol — "I Want"
+# Historical example: Gustav Theodor Fechner, February 1855
+# All facts accurate as of date. Written as if the protocol existed then.
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_want"
+  spec_date: "1855-02-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Four years into systematic psychophysical experimentation following the
+      insight of October 22, 1850 — that the relationship between stimulus
+      intensity and subjective sensation follows a logarithmic law. No longer
+      holding the physics chair (resigned 1839 due to severe illness and
+      temporary blindness). Working as an independent researcher at the
+      University of Leipzig with limited institutional support. The field this
+      work would establish does not yet have a name.
+    what_comes_next: >
+      Completing the full body of experimental evidence and mathematical
+      derivation needed for a comprehensive treatise. The work requires several
+      more years of experiments across multiple sense modalities before
+      publication.
+    hindsight_note: >
+      "Elemente der Psychophysik" was published in 1860, founding the field of
+      psychophysics. The Fechner-Weber law (S = k * log(I/I0)) became one of
+      the first mathematical laws of psychology. Wilhelm Wundt, a younger
+      colleague at Leipzig, built directly on Fechner's methods to establish
+      the first experimental psychology laboratory in 1879.
+
+identity:
+  name: "Gustav Theodor Fechner"
+  location: "Leipzig, Kingdom of Saxony"
+  languages:
+    - "German"
+    - "Latin"
+
+activity:
+  one_line: >
+    Establish quantitative laws governing the relationship between physical
+    stimuli and subjective perception.
+  description: >
+    Prove that inner experience has mathematical structure as precise as outer
+    physics. Derive a general psychophysical law from systematic experimental
+    measurement of sensation thresholds across multiple modalities — weight,
+    brightness, tone — extending Weber's discovery that just-noticeable
+    differences are proportional to stimulus magnitude into a complete
+    logarithmic function relating the physical and the mental.
+  method: >
+    Systematic psychophysical experimentation requiring extreme methodical
+    patience. Thousands of individual trials measuring just-noticeable
+    differences using three complementary methods: the method of limits
+    (ascending and descending stimulus series), the method of constant stimuli
+    (randomized presentation at fixed intensities), and the method of
+    adjustment (subject controls stimulus until threshold is reached). Each
+    experiment may require hundreds of subjects and thousands of observations.
+    Apparatus adapted from physics instrumentation. Mathematical derivation
+    from experimental data using integral calculus.
+
+positioning:
+  core_distinction: >
+    Treats sensation not as an ineffable philosophical category but as a
+    measurable quantity with lawful mathematical relationships to its physical
+    causes.
+  comparison:
+    - others: >
+        Philosophers treat the mind-body relationship as a metaphysical
+        question to be resolved through argument.
+      this_work: >
+        Treats the mind-body relationship as an empirical question to be
+        resolved through measurement and mathematical law.
+    - others: >
+        Physicists measure only the external world and consider inner
+        experience beyond the reach of quantitative science.
+      this_work: >
+        Extends the physicist's methods inward — measuring sensation with the
+        same rigor applied to electricity or heat.
+    - others: >
+        Herbart attempted mathematical psychology but worked from theoretical
+        postulates rather than systematic experimental measurement.
+      this_work: >
+        Grounds the mathematics of mind in tens of thousands of empirical
+        observations before deriving any law.
+
+frameworks_or_outputs:
+  - name: "Psychophysical law (S = k * log(I/I0))"
+    domain: "Psychophysics"
+    description: >
+      A logarithmic function relating subjective sensation magnitude (S) to
+      physical stimulus intensity (I), with threshold intensity (I0) and a
+      modality-specific constant (k). Derived by integrating Weber's law
+      (dS = k * dI/I) across the full range of stimulus intensities.
+    status: "in_progress"
+  - name: "Three psychophysical methods"
+    domain: "Experimental methodology"
+    description: >
+      Method of limits, method of constant stimuli, and method of adjustment —
+      three complementary experimental procedures for determining sensation
+      thresholds with statistical reliability.
+    status: "in_progress"
+  - name: "Nanna, oder uber das Seelenleben der Pflanzen"
+    domain: "Philosophy of mind"
+    description: >
+      Published 1848. Philosophical argument for the universality of
+      consciousness in nature — that even plants possess an inner life.
+      Establishes the metaphysical commitment that motivates the empirical
+      program.
+    status: "published"
+  - name: "Zend-Avesta, oder uber die Dinge des Himmels und des Jenseits"
+    domain: "Philosophy of mind"
+    description: >
+      Published 1851. Comprehensive philosophical cosmology arguing that
+      consciousness pervades the physical universe. The philosophical
+      foundation for treating inner experience as a legitimate object of
+      scientific investigation.
+    status: "published"
+
+intellectual_priors:
+  - author: "Ernst Heinrich Weber"
+    work: "De Tactu (1834) and Der Tastsinn und das Gemeingefuhl (1846)"
+    contribution: >
+      Discovered that the just-noticeable difference in sensation is
+      proportional to the magnitude of the stimulus (dI/I = constant). This
+      empirical regularity is the foundation from which the logarithmic
+      psychophysical law is derived by integration.
+  - author: "Gottfried Wilhelm Leibniz"
+    work: "Monadology (1714) and New Essays on Human Understanding (1765)"
+    contribution: >
+      The metaphysical commitment that inner experience is real, not
+      epiphenomenal. The continuity principle — that nature does not make
+      jumps — applied to the transition between unconscious and conscious
+      sensation (the concept of the threshold).
+  - author: "Johann Friedrich Herbart"
+    work: "Psychologie als Wissenschaft (1824)"
+    contribution: >
+      First systematic attempt to apply mathematics to mental phenomena.
+      Demonstrated that the aspiration to a mathematical psychology is not
+      absurd, even if Herbart's specific formulations lacked empirical
+      grounding. Established the precedent that this work extends.
+  - author: "Daniel Bernoulli"
+    work: "Specimen Theoriae Novae de Mensura Sortis (1738)"
+    contribution: >
+      Proposed that subjective utility is a logarithmic function of objective
+      monetary value. A structural parallel — in economics, the same
+      logarithmic compression that psychophysics finds in sensation. The
+      convergence of two independent domains toward the same mathematical
+      form suggests the law is fundamental.
+
+origin:
+  pattern: "Forced interiority — illness as instrument"
+  description: >
+    Appointed Professor of Physics at Leipzig in 1834 at age 33. In 1839,
+    suffered a severe breakdown — partial blindness from staring at the sun
+    during optical experiments, compounded by exhaustion. For three years
+    (1839-1842), lived in near-total darkness. During this period, the inner
+    world of sensation became the only accessible world. Recovered gradually
+    and found that the experience had permanently redirected his attention from
+    the physics of external objects to the physics of perception itself. The
+    morning of October 22, 1850 — lying in bed — the logarithmic law arrived
+    as a complete insight.
+  core_lesson: >
+    What seems subjective and unmeasurable turns out to have precise
+    quantitative structure when you build the right instrument.
+
+credentials:
+  education:
+    - degree: "Doctor of Medicine"
+      institution: "University of Leipzig"
+      year: 1835
+    - degree: "Habilitation in Physics"
+      institution: "University of Leipzig"
+      year: 1834
+  experience_arc: >
+    Studied medicine, turned to physics and mathematics. Appointed Professor
+    of Physics at Leipzig (1834). Published translations of French physics
+    texts and original work on galvanic currents. Illness forced resignation
+    from the chair (1839-1843). Recovery led to philosophical works on
+    consciousness (1848, 1851) and finally to the systematic experimental
+    program in psychophysics beginning 1850. Now conducting experiments as an
+    independent scholar affiliated with the University of Leipzig.
+
+collaboration:
+  what_I_respond_to:
+    - "Precisely designed experiments with clear quantitative predictions"
+    - "Mathematical formulations grounded in empirical observation"
+    - "Questions about the relationship between physical and mental quantities"
+    - "Colleagues willing to serve as experimental subjects for extended series"
+  what_I_do_not_respond_to:
+    - "Philosophical speculation without experimental backing"
+    - "Claims that inner experience is inherently unmeasurable"
+    - "Demands for immediate practical application"
+  preferred_format:
+    - "Written correspondence"
+    - "Structured experimental reports"
+    - "Mathematical derivation"
+  channels:
+    institution: "University of Leipzig"
+
+active_work:
+  - topic: "Completing the psychophysical law across multiple sense modalities"
+    status: "in_progress"
+    need: >
+      Institutional tolerance for a physics professor conducting psychology
+      experiments. Laboratory space with controlled stimulus apparatus.
+      Subjects willing to sit through thousands of threshold measurements.
+      A scientific community willing to take quantitative psychophysics
+      seriously as neither mere philosophy nor mere physics.
+  - topic: "Mathematical integration of Weber's law into a general sensation function"
+    status: "in_progress"
+    need: >
+      Verification of the logarithmic form across brightness, weight, and
+      tonal pitch. Sufficient data to establish the modality-specific
+      constants and confirm the universality of the functional form.

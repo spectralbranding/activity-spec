@@ -1,0 +1,164 @@
+# Activity Specification Protocol — I Want
+# Subject: Herbert Simon, Carnegie Tech GSIA researcher
+# Date: September 1952
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_want"
+  spec_date: "1952-09-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Just arrived at Carnegie Institute of Technology's new Graduate School of
+      Industrial Administration, recruited by Dean Lee Bach. Age 36. Published
+      "Administrative Behavior" in 1947 — a revision of his PhD dissertation
+      arguing that real organizational decision-making is bounded, not rational.
+      Left Illinois Institute of Technology for this new school designed from
+      scratch to make management scientific. No case-study method here — Bach
+      wants mathematical models and behavioral research.
+    what_comes_next: >
+      Building a research program that models how humans and organizations
+      actually decide. The economic fiction of the perfectly rational agent must
+      be replaced with something empirically grounded. Computational simulation
+      of cognitive processes is becoming imaginable — if the right collaborators
+      and computing resources can be found.
+    hindsight_note: >
+      Simon will co-create the Logic Theorist with Allen Newell and Cliff Shaw
+      at RAND in 1956 — the first artificial intelligence program. He will win
+      the Turing Award (1975) and the Nobel Prize in Economics (1978) for his
+      work on bounded rationality and organizational decision-making. Carnegie
+      Mellon will become the birthplace of AI and behavioral economics.
+
+identity:
+  name: "Herbert Alexander Simon"
+  location: "Pittsburgh, Pennsylvania"
+  languages:
+    - "English"
+
+activity:
+  one_line: "Model how humans and organizations actually make decisions under cognitive constraints — replacing the economic fiction of perfect rationality with empirically grounded formal models."
+  description: >
+    Develop descriptive theories of decision-making that account for the
+    cognitive limitations of real decision-makers. Organizations do not
+    optimize — they satisfice, accepting the first alternative that meets a
+    threshold of acceptability. Formalize these behaviors into mathematical and
+    eventually computational models that can be tested against observed
+    organizational decisions.
+  method: >
+    Cross-disciplinary synthesis. Take models from economics (utility theory),
+    psychology (cognitive limits), and mathematical logic (formal systems), find
+    where they break against observed behavior, and build replacement models.
+    Start with empirical observation of actual organizational decisions — watch
+    how municipal budget offices, factory managers, and administrative units
+    really operate. Then formalize the patterns into mathematical structures
+    that can be simulated.
+
+positioning:
+  core_distinction: "Studies how decisions ARE made (descriptive), not how they SHOULD be made (normative) — and treats the gap between the two as the primary phenomenon, not as noise."
+  comparison:
+    - others: "Neoclassical economists assume perfect information, unlimited computation, and utility maximization."
+      this_work: "Observes that real decision-makers have limited information, limited computation, and limited time — and models the strategies they actually use under these constraints."
+    - others: "Operations researchers optimize specific decisions given complete problem formulations."
+      this_work: "Studies how the problem formulation itself is constructed — how decision-makers frame, simplify, and decompose problems before solving them."
+    - others: "Psychologists study individual cognition in laboratory settings."
+      this_work: "Studies cognition embedded in organizational structures — how the organization shapes what the individual can perceive, remember, and decide."
+
+frameworks_or_outputs:
+  - name: "Administrative Behavior"
+    domain: "organizational theory, decision-making"
+    description: "Monograph arguing that decision-making is the central activity of administration. Introduces the concept of bounded rationality — decision-makers satisfice rather than optimize because of cognitive limitations and incomplete information."
+    status: "published"
+    url: ""
+  - name: "Bounded rationality and satisficing"
+    domain: "economics, psychology, organizational theory"
+    description: "Theoretical framework replacing the rational actor model. Decision-makers do not search exhaustively for the optimal choice — they search until they find an alternative that exceeds an aspiration level, then stop."
+    status: "in_progress"
+    url: ""
+  - name: "Models of Man"
+    domain: "behavioral science, mathematical modeling"
+    description: "Collection of formal models of human behavior — rational, boundedly rational, and organizational. Being developed from earlier papers and new work at Carnegie."
+    status: "in_progress"
+    url: ""
+
+intellectual_priors:
+  - author: "Chester Barnard"
+    work: "The Functions of the Executive (1938)"
+    contribution: "Organizations as cooperative systems maintained by executive communication. Barnard saw that organizational behavior cannot be reduced to individual rationality — the system has its own logic."
+  - author: "John von Neumann and Oskar Morgenstern"
+    work: "Theory of Games and Economic Behavior (1944)"
+    contribution: "Formal decision theory with mathematical rigor. Provides the normative benchmark that bounded rationality departs from — the idealized rational agent that real decision-makers fail to resemble."
+  - author: "Alfred North Whitehead and Bertrand Russell"
+    work: "Principia Mathematica (1910-1913)"
+    contribution: "Formal logic as a foundation for reasoning about reasoning. The ambition to reduce thought to formal symbolic manipulation — which Simon will later attempt computationally."
+  - author: "Charles Babbage"
+    work: "On the Economy of Machinery and Manufactures (1832)"
+    contribution: "Mechanical computation and the division of labor. The idea that cognitive processes might be decomposed into elementary steps and mechanized."
+
+origin:
+  pattern: "The gap between theory and observed behavior as the primary phenomenon"
+  description: >
+    Working in local government administration in Milwaukee in the early 1940s.
+    Watching how actual bureaucratic decisions were made — budget allocations,
+    personnel assignments, policy choices. They bore no resemblance to the
+    rational actor model taught in economics. Decision-makers did not maximize.
+    They found the first acceptable option and stopped. They used rules of thumb.
+    They simplified problems until they were tractable. The gap between economic
+    theory and observed behavior was not measurement error — it was the
+    phenomenon itself.
+  core_lesson: "When theory and observation diverge, the observation is the data and the theory is what needs replacing."
+
+credentials:
+  education:
+    - degree: "BA, Political Science"
+      institution: "University of Chicago"
+      year: 1936
+    - degree: "PhD, Political Science"
+      institution: "University of Chicago"
+      year: 1943
+  experience_arc: >
+    Research assistant at the International City Managers' Association, Chicago
+    (1936-1939) — studying municipal administration. Staff member at the Bureau
+    of Public Administration, University of California, Berkeley (1939-1942).
+    Faculty at Illinois Institute of Technology (1942-1949), teaching political
+    science and studying organizational decision-making. Dissertation published
+    as "Administrative Behavior" (Macmillan, 1947). Now at Carnegie Institute
+    of Technology's Graduate School of Industrial Administration (1949-present),
+    building a cross-disciplinary research program.
+
+collaboration:
+  what_I_respond_to:
+    - "Problems where observed behavior contradicts accepted theory"
+    - "Cross-disciplinary work combining economics, psychology, and formal logic"
+    - "Opportunities to formalize informal behavioral observations into mathematical models"
+    - "Institutional settings that reward intellectual boundary-crossing"
+  what_I_do_not_respond_to:
+    - "Normative prescriptions divorced from empirical observation"
+    - "Disciplinary turf wars and departmental politics"
+    - "Purely theoretical elegance with no empirical anchor"
+    - "Research that assumes the rational actor model is adequate"
+  preferred_format:
+    - "Written papers and monographs"
+    - "Seminar discussions across disciplines"
+    - "Small research groups combining different specialties"
+  channels:
+    office: "Graduate School of Industrial Administration, Carnegie Institute of Technology, Pittsburgh, PA"
+
+active_work:
+  - topic: "Computational models of decision processes"
+    status: "seeking"
+    need: >
+      Computing resources to simulate decision processes formally. Even simple
+      models of bounded rationality require exploring decision trees and
+      comparing alternatives — this is becoming a computational problem.
+  - topic: "Cross-disciplinary collaboration on organizational decision-making"
+    status: "seeking"
+    need: >
+      Colleagues who speak both psychology and mathematics — rare in 1952.
+      Economists lack psychological realism; psychologists lack formal models.
+      Need researchers comfortable in both languages simultaneously.
+  - topic: "Empirical studies of organizational decision-making"
+    status: "in_progress"
+    need: >
+      An institutional environment without disciplinary silos, where an
+      economist can collaborate with a psychologist and a mathematician without
+      departmental politics blocking the work.

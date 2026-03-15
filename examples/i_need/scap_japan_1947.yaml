@@ -1,0 +1,115 @@
+# Activity Specification Protocol — I Need
+# Subject: SCAP Economic and Scientific Section, occupied Japan
+# Date: April 1947
+
+meta:
+  schema_version: "1.0"
+  spec_type: "i_need"
+  spec_date: "1947-04-15"
+  format: "activity-specification-protocol"
+  context:
+    situation: >
+      Japan is under Allied occupation, governed by the Supreme Commander for
+      Allied Powers (General Douglas MacArthur). The country's industrial
+      infrastructure is devastated by wartime bombing. Manufacturing output is a
+      fraction of prewar levels. The telephone system is so unreliable that calls
+      frequently fail to connect. Democratic governance requires a modern census,
+      but Japan has never conducted one using statistical sampling methods. The
+      occupation's mandate includes economic reconstruction — a functioning
+      industrial base and civil infrastructure are prerequisites for a stable,
+      democratic Japan.
+    what_exists: >
+      Japanese engineers and scientists have technical competence but lack
+      exposure to modern statistical methods for industrial quality. JUSE
+      (the Union of Japanese Scientists and Engineers) was founded in 1946 to
+      promote quality improvement, but has no access to leading Western
+      statisticians. The Keidanren (Federation of Economic Organizations)
+      coordinates industry leadership. Nippon Telegraph and Telephone has
+      engineers who understand the telephone system's problems technically but
+      lack the statistical framework to solve them systematically. The pieces
+      are in place — what is missing is the methodology.
+    hindsight_note: >
+      Deming's 1947 census visit will establish the personal relationships that
+      lead to his 1950 quality lectures. JUSE will invite him back specifically
+      to teach statistical methods to top management. His eight-day seminar to
+      Japanese executives in 1950 will catalyze the Japanese quality revolution.
+      The Deming Prize (1951) will become Japan's highest quality honor. Within
+      three decades, Japanese manufacturing quality will surpass American quality
+      in automobiles, electronics, and steel — transforming the global economy.
+
+organization:
+  name: "Supreme Commander for Allied Powers (SCAP), Economic and Scientific Section"
+  location: "Tokyo, Japan"
+  domain: "Occupation government, economic reconstruction, industrial modernization"
+
+opportunity:
+  one_line: "Statistical expertise for census modernization and industrial quality reconstruction across occupied Japan."
+  description: >
+    The Economic and Scientific Section needs a statistician who can both
+    design modern sampling methods for the national census and introduce
+    systematic quality improvement methodology to Japanese industry. The two
+    needs are connected: the same statistical thinking that makes census
+    sampling rigorous also makes manufacturing quality measurable and
+    improvable. The ideal person understands both government statistics and
+    industrial process control.
+  urgency: "immediate"
+
+requirements:
+  capabilities_needed:
+    - capability: "Statistical sampling design for national census"
+      priority: "critical"
+      description: "Design and implement modern probability sampling methods for the first postwar Japanese national census. Must be rigorous enough for demographic analysis and democratic redistricting."
+    - capability: "Statistical process control for manufacturing"
+      priority: "critical"
+      description: "Teach statistical quality methods that can be applied across Japanese industry — not one factory at a time, but as a national industrial methodology. Telephone system reliability is the most urgent application."
+    - capability: "Teaching statistical methods to non-statisticians"
+      priority: "important"
+      description: "Must be able to communicate statistical concepts to engineers, managers, and executives who have technical competence but no training in Western statistical methods. The methods must transfer permanently, not depend on the expert's continued presence."
+
+  intellectual_fit:
+    - domain: "Applied statistics"
+      description: "Practitioner who applies statistical theory to real systems, not a pure theorist. Must be comfortable working with messy industrial data, not just textbook examples."
+    - domain: "Systems thinking"
+      description: "Someone who sees quality as a property of entire production systems, not isolated processes. Japan's problem is systemic — the entire industrial base needs reconstruction, not just individual factories."
+
+  method_requirements:
+    preferred_approach:
+      - "Applied statistical methods"
+      - "Lecture-based teaching to large audiences"
+      - "Train-the-trainer model for sustainable knowledge transfer"
+    autonomy_level: "autonomous"
+    time_commitment: "project_based"
+
+constraints:
+  - type: "political"
+    description: "Changes must not appear to be American imperialism. The methodology must become Japanese-owned, not American-imposed. The expert teaches; Japanese statisticians and managers implement."
+  - type: "timeline"
+    description: "Census work is needed immediately (1947). Industrial quality improvement must show results within years, not decades. The occupation has a finite lifespan."
+  - type: "budget"
+    description: "SCAP has limited budgets for external consultants. Engagements must be efficient — lectures to hundreds, not consultations with individuals."
+  - type: "political"
+    description: "The occupation is a temporary authority. Any methodology introduced must be sustainable after SCAP departs. Dependency on American experts is not acceptable."
+
+what_we_offer:
+  - resource: "Government authority across an entire national industrial system"
+    description: "SCAP has the authority to convene national-level training programs, mandate participation from industry leaders, and coordinate across companies and sectors. No private consulting engagement in America offers this scope."
+  - resource: "Access to Japanese executive and engineering leadership"
+    description: "Through JUSE, Keidanren, and direct occupation authority, SCAP can assemble audiences of hundreds of top Japanese executives and engineers. These are not shop-floor workers — they are the people who design the systems."
+  - resource: "An audience that is eager to learn"
+    description: "Japanese industry is in crisis. The postwar boom that made American manufacturers complacent does not exist here. Quality improvement is not optional — it is survival. Every lesson will be applied, not filed away."
+  - resource: "A nation-scale laboratory for quality methods"
+    description: "An entire country's industrial system, willing to commit to transformation. Not one factory. Not one company. A civilization rebuilding from the ground up, looking for the best methods available."
+
+active_problems:
+  - problem: "Telephone system reliability"
+    status: "unsolved"
+    what_exists: "Nippon Telegraph and Telephone has engineers who understand the equipment. SCAP Civil Communications Section has documented the failure rates. The problem is known; the systematic methodology for solving it is not."
+    what_is_missing: "Statistical process control methods applied to telecommunications manufacturing and exchange operations. Someone who can teach NTT engineers to use control charts to diagnose and reduce variation in telephone equipment."
+  - problem: "National census design"
+    status: "unsolved"
+    what_exists: "Japan has conducted enumerations before but never a modern statistical census using probability sampling. The administrative infrastructure exists. The statistical methodology does not."
+    what_is_missing: "A census sampling expert who can design the methodology, train Japanese statisticians to implement it, and validate the results. Must be someone with direct experience at a national statistical office."
+  - problem: "Manufacturing quality across all sectors"
+    status: "unsolved"
+    what_exists: "Japanese goods are perceived globally as cheap, low-quality imitations. Individual engineers have technical skill but no statistical framework for systematic quality improvement. JUSE exists as a coordinating body but lacks access to leading statistical thinkers."
+    what_is_missing: "A comprehensive statistical quality methodology that Japanese industry can own, teach internally, and sustain independently. Not a quick fix — a management philosophy backed by rigorous statistical methods."
