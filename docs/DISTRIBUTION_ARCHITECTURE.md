@@ -146,6 +146,7 @@ This is the core value proposition: your AI agent works 24/7 so you don't have t
 - GPG-signed git commits for spec authenticity
 
 **Strengths**:
+- **Own your CV**: Your specification lives on YOUR domain, in YOUR git repo. Not on LinkedIn's servers, not in a recruiter's database. You control the source, the versioning, the visibility, and the access. This is the "own your data" movement applied to professional identity — except it's not identity, it's your action profile.
 - No platform rent. Specifications hosted by their owners.
 - No collapse enforced. Full dimensionality preserved.
 - No lock-in. YAML is portable. Git is distributed.
