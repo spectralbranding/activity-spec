@@ -9,3 +9,13 @@
 
 # Machine-specific MCP config (use .mcp.json.silicon or .mcp.json.intel templates)
 .mcp.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.python-version
+uv.lock
+*.egg-info/
+dist/
+build/
