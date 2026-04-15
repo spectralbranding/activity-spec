@@ -13,4 +13,6 @@ dependencies = []
 [dependency-groups]
 dev = [
     "pyyaml>=6.0",
+    "black>=24.0",
+    "flake8>=7.0",
 ]
