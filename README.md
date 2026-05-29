@@ -1,3 +1,7 @@
+[![MIT License](https://img.shields.io/badge/Code-MIT-blue.svg)](LICENSE)
+[![CC-BY 4.0](https://img.shields.io/badge/Data-CC--BY_4.0-lightgrey.svg)](LICENSE-data)
+![Last Updated](https://img.shields.io/badge/updated-2026--05--29-success)
+
 # Activity Specification Protocol (ASP)
 
 **You are what you do. The specification IS the identity.**
@@ -192,3 +196,95 @@ Dmitry Zharnikov ([ORCID](https://orcid.org/0009-0000-6893-9231))
 ## Citation
 
 See [CITATION.cff](CITATION.cff) for structured citation data.
+
+---
+
+## 1 | Getting Started
+
+Clone the repository and enter the directory:
+
+```bash
+git clone https://github.com/spectralbranding/activity-spec.git
+cd activity-spec
+```
+
+Python dependencies are managed via `uv`:
+
+```bash
+uv sync
+```
+
+The project anchor is `pyproject.toml` at the repository root.
+
+## 2 | Project Layout
+
+```
+activity-spec/
+├── schema/                # i_want, i_need, match_report schemas
+├── prompts/               # ASP-01 (generate) + ASP-02 (match)
+├── examples/              # 5 historical i_want + i_need + match_reports
+├── docs/                  # Distribution architecture + historical notes
+├── output/                # Generated artifacts
+│   ├── figures/
+│   ├── tables/
+│   └── logs/
+├── CITATION.cff           # Machine-readable citation
+├── LICENSE                # MIT (code)
+├── LICENSE-data           # CC BY 4.0 (data + figures)
+├── pyproject.toml         # Python project anchor
+├── reproduce.sh           # Single-command verification
+└── README.md              # This file
+```
+
+## 3 | Quick Start
+
+Verify the repository and validate every example YAML in one command:
+
+```bash
+./reproduce.sh
+```
+
+The script installs dependencies via `uv sync`, runs `uv run pytest` if a test suite is present, and validates that every YAML file under `examples/` parses cleanly. A run log lands in `output/logs/master_run.log`.
+
+To regenerate a specification from a conversation, use [`prompts/ASP_01_GENERATE.md`](prompts/ASP_01_GENERATE.md) with any LLM. To match two specs, use [`prompts/ASP_02_MATCH.md`](prompts/ASP_02_MATCH.md).
+
+## 4 | Dependencies
+
+### Python ≥ 3.12
+
+Declared in [`pyproject.toml`](pyproject.toml). Install with `uv sync`. Dev dependencies (`pyyaml`, `black`, `flake8`) install into the `dev` group.
+
+### LLM API access (optional)
+
+ASP-01 and ASP-02 prompts are LLM-agnostic — Claude, GPT, or Gemini all work. No keys are required to use the schemas, prompts, or examples in this repository. If you script your own batch generation, store any API keys in `.env` (which is gitignored) and never commit them.
+
+## 5 | Script Map
+
+ASP is a schema + prompts + examples repository rather than a numerical pipeline, so the script map is small.
+
+| Block | Script | Inputs | Outputs |
+|-------|--------|--------|---------|
+| Dependency install | `reproduce.sh` step 1 | `pyproject.toml` | `.venv/` (gitignored) |
+| Test suite | `reproduce.sh` step 2 | `tests/` (if present) | `output/logs/master_run.log` |
+| Example validation | `reproduce.sh` step 3 | `examples/**/*.yaml` | `output/logs/master_run.log` |
+
+Spec generation and matching themselves are LLM-mediated and run interactively — see the prompts in `prompts/`.
+
+## 6 | Citation
+
+If you build on this work, please cite:
+
+> Dmitry Zharnikov (2026). "Activity Specification Protocol (ASP)." https://github.com/spectralbranding/activity-spec
+
+Machine-readable citation: see [`CITATION.cff`](CITATION.cff). GitHub renders this natively via "Cite this repository"; Zotero, Mendeley, and Pandoc read it directly.
+
+## 7 | Licence
+
+- **Code** — © Dmitry Zharnikov, 2026. [MIT Licence](LICENSE).
+- **Data, schemas, examples, figures** — © Dmitry Zharnikov, 2026. [CC BY 4.0](LICENSE-data).
+
+Both licences permit reuse with attribution. The MIT Licence permits modification and redistribution of code; CC BY 4.0 permits any reuse of schemas, examples, and rendered artifacts with attribution to the author.
+
+---
+
+*Last updated: 2026-05-29*

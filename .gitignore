@@ -1,11 +1,10 @@
 .DS_Store
 
-# Claude Code local settings (keep commands/ tracked)
-.claude/*
-!.claude/commands/
-!.claude/templates/
-!.claude/skills/
-!.claude/hooks/
+# Secrets + environment
+.env
+.env.*
+*.env
+!.env.example
 
 # Machine-specific MCP config (use .mcp.json.silicon or .mcp.json.intel templates)
 .mcp.json
@@ -18,3 +17,14 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+
+# Fleet internal (public repo — nothing tracked)
+.claude/
+.claude-decisions/
+skills/
+.clinerules
+.cursorrules
+.cursorignore
+.rooignore
+.mcp.json
+.flake8
