@@ -19,6 +19,16 @@ dist/
 build/
 
 # Fleet internal (public repo — nothing tracked)
+.claude-decisions/
+skills/
+.clinerules
+.cursorrules
+.cursorignore
+.rooignore
+.mcp.json
+.flake8
+
+# Fleet internal (public repo — nothing tracked)
 .claude/
 .claude-decisions/
 skills/
