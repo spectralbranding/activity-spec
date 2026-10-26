@@ -250,7 +250,7 @@ To regenerate a specification from a conversation, use [`prompts/ASP_01_GENERATE
 
 ## 4 | Dependencies
 
-### Python ≥ 3.12
+### Python ≥ 3.14
 
 Declared in [`pyproject.toml`](pyproject.toml). Install with `uv sync`. Dev dependencies (`pyyaml`, `black`, `flake8`) install into the `dev` group.
 
