@@ -35,4 +35,4 @@ Design documented in the private `spectral-branding` repo: `launch/RESEARCHER_PR
 - Markdown for all documentation
 - No SBT/OST jargon in public-facing content — standalone comprehensible
 - Historical demos must be factually accurate (sources in `docs/HISTORICAL_NOTES.md`)
-- Python 3.12 + uv for any future tooling
+- Python 3.14 + uv for any future tooling
