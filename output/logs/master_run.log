@@ -1,0 +1,28 @@
+==================================================
+Pipeline run: 2026-10-26T11:39:48Z
+Repo: /Users/d/projects/activity-spec
+Git SHA: 39f43bc453722ef75936908229c519d7a5387f79
+==================================================
+>>> Checking dependencies...
+Resolved 14 packages in 2ms
+Checked 12 packages in 1ms
+>>> No tests/ directory found; skipping pytest.
+>>> Validating example YAML files...
+  OK   examples/i_want/ohno_1948.yaml
+  OK   examples/i_want/deming_1947.yaml
+  OK   examples/i_want/fechner_1855.yaml
+  OK   examples/i_want/shannon_1946.yaml
+  OK   examples/i_want/simon_1952.yaml
+  OK   examples/match_reports/deming_x_scap_japan.yaml
+  OK   examples/match_reports/shannon_x_bell_labs.yaml
+  OK   examples/match_reports/ohno_x_toyota.yaml
+  OK   examples/match_reports/fechner_x_leipzig.yaml
+  OK   examples/match_reports/simon_x_rand_carnegie.yaml
+  OK   examples/i_need/rand_carnegie_1952.yaml
+  OK   examples/i_need/scap_japan_1947.yaml
+  OK   examples/i_need/bell_labs_comm_1946.yaml
+  OK   examples/i_need/toyota_production_1948.yaml
+  OK   examples/i_need/leipzig_psychophysics_1855.yaml
+==================================================
+Pipeline complete: 2026-10-26T11:39:48Z
+==================================================
